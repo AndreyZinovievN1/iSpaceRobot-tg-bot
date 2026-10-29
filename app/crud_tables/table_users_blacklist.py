@@ -1,0 +1,14 @@
+from config import logger
+from app.db import db
+
+async def add_user_to_blacklist(chat_id: int):
+    pass  # TODO: Commercial logic
+
+async def is_user_in_blacklist(chat_id: int) -> bool:
+    pass  # TODO: Commercial logic
+
+async def get_user_from_blacklist(chat_id: int):
+    pass  # TODO: Commercial logic
+
+async def delete_user_from_blacklist(chat_id: int):
+    pass  # TODO: Commercial logic

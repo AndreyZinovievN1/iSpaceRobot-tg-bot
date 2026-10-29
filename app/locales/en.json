@@ -1,0 +1,1237 @@
+{
+  "roles": {
+    "role_names": {
+      "husband": "groom",
+      "wife": "bride",
+      "registrar": "registrar",
+      "witness_man": "best man",
+      "witness_woman": "maid of honor",
+      "guest": "guest"
+    },
+    "cant_change_role": "🎉 {name}, you are the {role} and can’t change roles.",
+    "not_wife": "🚫 {name}, you are not the bride.",
+    "already_wife": "🎉 {name}, you’re already the bride.",
+    "became_wife": "✅ {name}, you are now the bride!",
+    "already_husband": "🎉 {name}, you’re already the groom.",
+    "not_husband": "🚫 {name}, you are not the groom.",
+    "already_joined": "🎉 {name}, you’ve already joined the wedding.",
+    "joined": "✅ {name}, you’ve joined the wedding!",
+    "seat_taken": "🔒 {name}, this spot is taken — try another role.",
+    "already_other_role": "⚠️ You already have another role!",
+    "wait_for_bride": "⚠️ Please wait until the bride joins the wedding."
+  },
+  "allowed_links": {
+    "no_permission": "🚫 {mention}, you don't have permission to use \"{cmd}\".",
+    "added": "{mention}, the allowed link \"{link}\" has been added.",
+    "already_exists": "{mention}, the allowed link \"{link}\" already exists.",
+    "removed": "{mention}, the allowed link \"{link}\" has been removed.",
+    "not_found": "{mention}, the allowed link \"{link}\" was not found.",
+    "add_usage": "<b>{role}</b>: {mention}\n❗Missing arguments!\nExample:\n<code>+ссылка t.me/http/https://...</code>",
+    "remove_usage": "<b>{role}</b>: {mention}\n❗Missing arguments!\nExample:\n<code>-ссылка t.me/http/https://...</code>"
+  },
+  "rp_local": {
+    "no_permission": "{mention}, you don't have permission to use \"{cmd}\".",
+    "gif_not_found": "{mention}, GIF with ID <code>{gif_id}</code> was not found in the catalog.\nGIF catalog: <a href=\"{catalog_link}\">open</a>\n\n<code>+рп {cmd} {text} [GIF ID]</code>",
+    "created": "✅ Command <code>{cmd}</code> has been added. {gif_part}",
+    "already_exists": "Command <code>{cmd}</code> already exists.",
+    "ask_cmd": "<b>How to name the command?</b>\n\n• One word without spaces.\n• With or without \"!\" — I'll save as <code>!command</code>.\nExample: <code>!take</code>\n\n<i>Type \"отмена\" to cancel.</i>",
+    "cancelled": "Cancelled.",
+    "cmd_one_word": "The command must be a single word without spaces. Example: <code>!take</code> or <code>take</code>",
+    "cmd_exists_choose_other": "Command <code>{cmd}</code> already exists. Choose another, e.g. <code>{cmd2}</code>",
+    "ask_text": "<b>What text should be shown to users?</b>\n\n• Required placeholders:\n  <code>name1</code> — sender\n  <code>name2</code> — target\n• Emojis allowed anywhere.\n• End with \"!\" or \"?\" (if missing — I'll add a \".\").\n\n<b>Examples:</b>\n<code>name1 hugged name2 🤗!</code>\n<code>name1 💫\ntook in the arms\nname2 🤍?</code>\n\n<i>Type \"отмена\" to cancel.</i>",
+    "text_require_placeholders": "<b>The text must contain placeholders:</b>\n• <code>name1</code> — sender\n• <code>name2</code> — target\nEmojis allowed. End with \"!\" or \"?\" (otherwise a \".\" will be added).\n\n<b>Examples:</b>\n<code>name1 hugged name2 🤗!</code>\n<code>name1\nhugged\nname2 🤍?</code>",
+    "ask_gif": "Which GIF to use?\nSend the GIF <b>ID</b> from catalog (number) or write <code>нет</code> to skip.\n\nCatalog: <a href=\"{catalog_link}\">open</a>",
+    "gif_need_number": "You must send a number (GIF ID from the catalog) or write <code>нет</code>.\nGIF catalog: <a href=\"{catalog_link}\">open</a>",
+    "gif_not_found_retry": "GIF with ID <code>{gif_id}</code> not found.\nTake the ID from <a href=\"{catalog_link}\">the Catalog</a> and send again, or write <code>нет</code> to add without GIF.",
+    "deleted": "{mention}, command \"{cmd}\" has been deleted.",
+    "delete_not_found": "{mention}, command \"{cmd}\" does not exist.",
+    "delete_usage": "{mention}, to delete an RP command, write it after -рп:\n-рп !помяукать"
+  },
+  "settings": {
+    "admin_only": "🚫 This section is available to admins only.",
+    "main_text": "Buttons on the left — info ⚙️\nButtons on the right — on/off ☑️",
+    "shalosti_page_text": "😈 Section “Pranks / 🎮 Games”\n\nButtons on the left — info ⚙️\nButtons on the right — on/off ☑️",
+    "state": {
+      "on": "enabled ✅.",
+      "off": "disabled 📴."
+    },
+    "toggled": "{name} - feature {state}",
+    "names": {
+      "systemmsg": "🔧 System messages",
+      "antiarab": "👳🏾‍♂️ Arabic filter",
+      "antibot": "🤖 Bots",
+      "antichannel": "👤 Channels",
+      "antiforward": "📢 Forwards",
+      "antilink": "🔗 Links",
+      "antihyper": "🔍 Hyperlinks",
+      "antibutton": "🖲️ Buttons",
+      "antiuser": "🌀 @Users",
+      "antispam": "🛡️ Antispam",
+      "nsfw": "🔞 RP 18+",
+      "wedding": "💍 Weddings",
+      "roulette": "🎰 Roulette",
+      "shalosti": "😈 Pranks / 🎮 Games"
+    },
+    "info": {
+      "systemmsg": "System notices about events/actions.",
+      "antiarab": "Filter for Arabic/foreign spam.",
+      "antibot": "Blocks adding bots.",
+      "antichannel": "Blocks messages from channels.",
+      "antiforward": "Disallows forwarded messages.",
+      "antilink": "Deletes messages with links.",
+      "antihyper": "Blocks text hyperlinks.",
+      "antibutton": "Deletes messages with inline buttons.",
+      "antiuser": "Blocks mentioning @users.",
+      "antispam": "Enables antispam limits.",
+      "shalosti": "Page with pranks and games.",
+      "wedding": "Enables weddings/divorces system.",
+      "roulette": "Enables the roulette game.",
+      "nsfw": "Enables RP 18+ replies (including reply)."
+    },
+    "choose_chat_language": "🌐 Choose a language for this chat:",
+    "lang_applied": "✅ Chat language updated."
+  },
+  "moderation": {
+    "no_permission": "🚫 {mention}, you don’t have permission to use the \"{cmd}\" command.",
+    "need_reply": "<b>{role}</b>: {mention}\n🙌🏼 The <code>{cmd}</code> command must be a reply to a group member’s message\n{reason}",
+    "ban_self": "<b>{role}</b>: {mention}\n🔒 You can’t ban yourself.",
+    "ban_bot": "<b>{role}</b>: {mention}\n🔒 You can’t ban the bot.",
+    "ban_admin": "<b>{role}</b>: {mention}\n🔒 You can’t ban an admin.",
+    "already_banned": "🚫 {target} is already banned.",
+    "banned": "🤐 <b>Banned</b>: {target} [<code>{id}</code>]",
+    "already_kicked": "🚫 {target} is already kicked.",
+    "kicked": "👟 Kicked from the group: {target} [<code>{id}</code>]",
+    "mute_self": "<b>{role}</b>: {mention}\n🔒 You can’t mute yourself.",
+    "mute_bot": "<b>{role}</b>: {mention}\n🔒 You can’t mute the bot.",
+    "mute_admin": "⚠️ {target} is an admin, you can’t mute them.",
+    "mute_no_args": "<b>{role}</b>: {mention}\n❗Not enough arguments!\nExample: <code>!mute 10m/2h/1d</code>",
+    "muted": "🤐 <b>Muted</b>: {target} [<code>{id}</code>]\n🤫 Duration: <code>{duration}</code>\n⏰ Until: <code>{until}</code>",
+    "remute_done": "🙂 <b>Unmuted</b>: {target} [<code>{id}</code>]",
+    "remute_none": "⚠️ {target} has no mute."
+  },
+  "active_kick": {
+    "access_denied": "🚫 Access denied",
+    "menu_title": "🚀 Active kick:",
+    "ask_count": "Send the number of users you want to remove 👇",
+    "invalid_format": "❌ Invalid format",
+    "kicked_success": "✅ Successfully removed {success} users.",
+    "kicked_success_of_count": "✅ Successfully removed {success} users. (out of {count})",
+    "kicked_success_of_limit": "✅ Successfully removed {success} users (out of {limit} requested)",
+    "choose_period": "📆 For what period of activity should users be removed?",
+    "no_users_kicked": "ℹ️ No users could be removed."
+  },
+  "inactive_kick": {
+    "access_denied": "🚫 Access denied",
+    "menu_title": "💤 Inactive kick:",
+    "ask_count": "Send the number of users you want to remove 👇",
+    "choose_period": "📆 Choose the period (in days) for inactive kick:",
+    "enter_integer": "⚠️ Enter an integer",
+    "max_count_hint": "⚠️ You can remove up to <b>{count_of_users}</b> members.",
+    "confirm_count": "👟 Remove <b>{count}</b> least active users from the group?",
+    "invalid_format": "❌ Invalid format",
+    "kicked_success": "✅ Successfully removed {success} users.",
+    "kicked_success_of_count": "✅ Successfully removed {success} users. (out of {count})",
+    "kicked_success_of_limit": "✅ Successfully removed {success} users (out of {limit} requested)"
+  },
+  "nubs_kick": {
+    "access_denied": "🚫 Access denied",
+    "choose_period": "📆 Select the number of days to kick newcomers:",
+    "done": "✅ Successfully removed {success} users with activity in the last {days} days and with no activity."
+  },
+  "silence_kick": {
+    "access_denied": "🚫 Access denied",
+    "choose_period": "📆 Select the number of days to kick silent users:",
+    "done": "✅ Successfully removed {success} users inactive for more than {days} days and with no activity."
+  },
+  "kick_menu": {
+    "access_denied": "🚫 Access denied",
+    "title": "👟 Kick:"
+  },
+  "chat_management": {
+    "access_denied": "🚫 Access denied",
+    "header_user": "<a href=\"tg://user?id={user_id}\">{user}</a>",
+    "chat_info_title": "📁 Chat info:",
+    "chat_id": "🆔 Chat ID: <code>{chat_id}</code>",
+    "users_count": "🚹 Members: <b>{count}</b>",
+    "messages_count": "💬 Chat messages: <b>{count}</b>",
+    "admins": "🛂 Admins:",
+    "admin_item": "<a href=\"tg://user?id={admin_id}\">{admin_name}</a> <code>[{admin_id}</code>]",
+    "menu_title": "🕹 Chat management menu:",
+    "no_rights": "<a href=\"tg://user?id={user_id}\">{user}</a>, you don't have permission to use this command.",
+    "reply_required_add": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ Use the command as: +admin (Reply to a user)",
+    "reply_required_remove": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ Use the command as: -admin (Reply to a user)",
+    "cant_target_bot": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ You cannot target the bot.",
+    "cant_target_owner": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ You cannot change the chat owner's rights.",
+    "already_admin": "<a href=\"tg://user?id={user_id}\">{user}</a>, ℹ️ This user is already an administrator.",
+    "not_admin": "<a href=\"tg://user?id={user_id}\">{user}</a>, ℹ️ This user is not an administrator.",
+    "no_rights_promote": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ I don't have permission to promote administrators.",
+    "no_rights_demote": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ I don't have permission to demote administrators.",
+    "promoted": "<a href=\"tg://user?id={user_id}\">{user}</a> has been promoted to admin in <b>{chat}</b>.",
+    "demoted": "<a href=\"tg://user?id={user_id}\">{user}</a> has been demoted from admin in <b>{chat}</b>.",
+    "owner_only": "🚫 Only the chat owner can use this button."
+  },
+  "events": {
+    "menu_title": "🔍 Event Channel",
+    "menu_description": "Here you can configure the channel where all events of this group will be saved.\\nTo add a channel, you must be the channel owner and @iSpaceRobot must be an Admin of this channel. If these conditions are met, click the button below.\\n<i>The channel can be either public or private.</i>",
+    "current_log_chat": "Current log-chat:",
+    "not_found": "Not found.",
+    "add_chat_first": "⚠️ Add a log chat before changing settings.",
+    "logging_state": "Logging {event} - {state}",
+    "logging_enabled": "enabled ✅",
+    "logging_disabled": "disabled 📴",
+    "introductions_info": "➕ Records users joining the group.",
+    "exits_info": "🚪 Records users leaving the group.",
+    "punishments_info": "⚖️ Records automatically applied punishments (antispam, antiflood, banned words, etc.).",
+    "arab_info": "👳🏾‍♂️ Records punishments for using Arabic symbols.",
+    "bot_added_info": "🤖 Records actions related to adding bots to the group.",
+    "ban_mute_info": "🔒 Records bans, unbans, mutes, unmutes, and removals by admins/moderators.",
+    "admin_info": "🛡️ Records admin summons with @admin.",
+    "settings_info": "⚙️ Records settings changes.",
+    "role_info": "🎭 Records role assignments and removals.",
+    "change_log_group_denied": "🚫 You don’t have access to this button.",
+    "current_chat_info": "Current log-chat:",
+    "send_chat_id": "Send the chat ID where logs will be sent.\\nTo get the chat ID, use the command <code>/id</code> in it.",
+    "chat_set_success": "✅ Chat {title} has been assigned for logs.\\n\\nNow you can configure what logs you need in the section \"🎛 What to log in the channel?\"",
+    "chat_not_found": "⚠️ Chat with ID: <code>{chat_id}</code> was not found. If the bot is not in this chat, you need to add it.",
+    "chat_deleted": "🗑️ You successfully removed the log chat. To receive logs again, assign a chat.",
+    "added": {
+      "blacklisted_chat": "Hi! This chat is blacklisted. Bye!",
+      "hello": "Hi! {help_text}"
+    },
+    "granted_admin": "Thanks for the admin role! Now I can work at full power. 🚀",
+    "rights": {
+      "delete_messages": "🗑 Delete messages",
+      "restrict_members": "🚫 Block users",
+      "invite_users": "🔗 Invite users",
+      "pin_messages": "📌 Pin messages",
+      "change_info": "⚙️ Change group info",
+      "manage_chat": "📋 Manage chat",
+      "is_anonymous": "👻 Anonymous",
+      "promote_members": "📢 Promote admins",
+      "manage_video_chats": "🎥 Manage video chats",
+      "post_messages": "✉️ Post messages",
+      "edit_messages": "✏️ Edit messages",
+      "manage_topics": "🏷 Manage topics"
+    },
+    "role_change": {
+      "added_title": "➕ #ROLE_ADDED #ADMIN 👮🏻‍♂️",
+      "removed_title": "➖ #ROLE_REMOVED #ADMIN 👮🏻‍♂️",
+      "rights_title": "🛡 <b>Admin rights:</b>",
+      "group_line": "<b>• Group:</b> <a href='{link}'>{title}</a> [<code>{group_id}</code>]",
+      "initiator_line": "<b>• Initiator:</b> {initiator} [<code>{initiator_id}</code>]",
+      "who_line": "<b>• Who:</b> {who} [<code>{who_id}</code>]"
+    },
+    "join": {
+      "antiarab": {
+        "name": "<b>Banned</b> {who} for <b>Arabic letters</b> in the name 👳🏾‍♂️\n\n<a href='{catalog_link}'>Space Catalog ✨</a>",
+        "bio": "<b>Banned</b> {who} for <b>Arabic letters</b> in the bio 👳🏾‍♂️\n\n<a href='{catalog_link}'>Space Catalog ✨</a>"
+      },
+      "banlist_caption": "🌌 Important message from Space! 🚀\n\n{who} was banned for violating our cosmic rules. We keep this place safe and friendly.\n\nThanks for understanding! 🌟",
+      "spamlist_caption": "🌌 Important message from Space! 🚀\n\n{who} was banned for raids/spam. We keep this place safe and friendly.\n\nThanks for understanding! 🌟",
+      "log_new_user": {
+        "title": "➕ #NEW_USER",
+        "who": "<b>• Who:</b> {who} [<code>{who_id}</code>]",
+        "group": "<b>• Group:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]",
+        "by_link": "<b>• Via invite:</b> {by} [<code>{by_id}</code>]"
+      },
+      "secret_chief": "Main Directorate of Digital Control — {chief}. He controls every bit like Stalin controlled the people.",
+      "owner_texts": [
+        "⚔️ A legend returns! Attention: our owner {name} is back! Bow to his greatness! 🤴",
+        "🌌 Winds of change brought the true owner here... Welcome, {name}! The owner is present! 🔥",
+        "🔥 Clear the way! Owner {name} is here! 🏆",
+        "⚡ Attention! Owner {name} entered the chat! 😎",
+        "💥 IMPORTANT! Our owner {name} joined the chat! 🏅",
+        "👑 Heads up! Owner {name} arrived! 🔥",
+        "🚀 From orbit to chat — {name}, our owner, is back! 🌠",
+        "⚡ Prepare, chat! {name} — the owner is here, order restored! 🛡",
+        "🔥 Owner {name} has landed! All according to plan! 🚀",
+        "🌠 {name} returned! Without the owner it wasn’t the same... 🚀",
+        "🎩 Eyes here! {name} — the owner — is among us again! ✨",
+        "⚡ A special day — {name}, the owner, is back! 😎"
+      ],
+      "agent_texts": [
+        "🛡️ Star agent {name} has arrived on duty! 🚀",
+        "💫 From orbit to chat — {name}, our star agent, is here! 🌠",
+        "⚔️ Guardian of the Galaxy {name} joined! Keep order! 🛸",
+        "🌟 Starlight brightens the chat! {name} — star agent, welcome! ✨",
+        "🎩 Attention! Star agent {name} is on site! Systems nominal! 🛰",
+        "🔥 Agent {name} has landed! Mission start! 🚀",
+        "🛰 Contact established! Star agent {name} joined the team! 🌌",
+        "💥 Galactic agent {name} joined! Operation begins! 🛡️",
+        "🌠 Star agent {name} is back! Connecting to interstellar channel! 🚀",
+        "⚡ Meet {name} — elite star agent keeping cosmic order! 🛸"
+      ]
+    },
+    "bot_log": {
+      "title": "➕ #NEW_BOT",
+      "what": "<b>• Which:</b> {who} [<code>{who_id}</code>]",
+      "group": "<b>• Group:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]",
+      "by_link": "<b>• Via invite:</b> {by} [<code>{by_id}</code>]"
+    },
+    "leave": {
+      "title": "➖ #USER_LEFT",
+      "who": "<b>• Who:</b> {who} [<code>{who_id}</code>]",
+      "group": "<b>• Group:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]",
+      "remover_kicked": "<b>• Kicked by:</b> {remover} [<code>{remover_id}</code>]",
+      "remover_self": "<b>• Left by himself/herself</b>"
+    },
+    "settings": {
+      "title": "➖ #SETTINGS_CHANGED",
+      "name_changed": "🔖 Group title changed",
+      "photo_changed": "🖼 Group photo changed",
+      "who": "<b>• Who:</b> {who} [<code>{who_id}</code>]",
+      "group_line": "<b>• Group:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]",
+      "changed_title_minus": "➖ #SETTINGS_CHANGED",
+      "photo_changed_line": "🖼 Group photo was changed",
+      "title_changed_line": "🔖 Group title was changed",
+      "new_title_line": "<b>• New title:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]"
+    },
+    "logs": {
+      "no_admin_for_check": "The bot has no admin rights to check new users.",
+      "failed_to_ban_user": "❌ Failed to ban user: {error}",
+      "title_change_error": "Error while processing group title change: {error}",
+      "photo_change_error": "Error while processing chat photo change: {error}",
+      "pinned_message": "Pinned message:",
+      "no_admin_for_moderation": "The bot has no admin rights to moderate messages."
+    },
+    "admin_tag": {
+      "title": "👮🏻‍♂️ #ADMIN_TAGGED",
+      "who_line": "<b>• Who:</b> {who} [<code>{who_id}</code>]",
+      "group_line": "<b>• Group:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]",
+      "admin_line": "<b>• Admin:</b> {admin} [<code>{admin_id}</code>]"
+    },
+    "common": {
+      "who_line": "<b>• Who:</b> {who}",
+      "group_line": "<b>• Group:</b> {group}"
+    },
+    "antiarab": {
+      "log_message": "➕ #ARABIC_SYMBOLS 👳🏾‍♂️\n{group}\n{bot} banned {who} for using Arabic symbols.\n#id{tagid}"
+    }
+  },
+  "migration": {
+    "access_denied": "🚫 Access denied",
+    "run_in_group": "{mention}, run the \"!миграция\" command in the chat from which messages will be migrated.",
+    "only_creator": "{mention}, the \"!миграция\" command can only be used by the chat creator.",
+    "secret_message": "❗️Secret❗️\nMigration key:\n<code>{key}</code>\nMigrate from: <a href='{chat_link}'>{chat_title}</a>\n\n<b>Use this in the chat where you want the messages to be migrated.</b>"
+  },
+  "night_mode": {
+    "on_caption": "🌒 Night mode activated!\nWill turn off at {time}\n\n✨ Good night everyone!",
+    "off_caption": "☀️ Night mode deactivated!\nWill turn on at {time}\n\n🌻 Good morning!",
+    "tutorial_change_time": "ℹ️ How to set time: choose “Start” and “End”, adjust with arrows, then tap “Confirm”.",
+    "schedule_title": "⏱️ Night mode schedule",
+    "toggle_result": "{feature}: {state}",
+    "state_enabled": "enabled",
+    "state_disabled": "disabled",
+    "menu_title": "🌒 Night Mode",
+    "status_enabled_block": "✅ Enabled\n  └ Active from <b>{start_time}</b> to <b>{end_time}</b>\n\n⌚️ Current time: {now}\n🌍 Time zone: {timezone}",
+    "status_disabled_block": "❌ Disabled",
+    "delete_media_info": "📸 Deletes all media sent by members during night mode.",
+    "global_silence_info": "🌐 Deletes all messages sent by members during night mode.",
+    "silence_info": "🤫 Deletes members’ messages during night mode, except those from administrators.",
+    "notify_info": "🔔 Sends notifications at the start and end of night mode."
+  },
+  "welcome_text": {
+    "access_denied": "🚫 Access denied",
+    "prompt_intro": "Enter the new welcome message below 👇\n\nYou can use the following placeholders:",
+    "placeholders_block": "<i>name — sender’s name with profile link\nid — sender’s Telegram ID\nchat_id — chat ID\ntitle — chat title\nchat — chat link with title\nbot — bot name with profile link</i>",
+    "current_text_title": "Current text:",
+    "current_text_code": "<code>{welcome_text}</code>",
+    "changed_by_owner": "<b>🤴🏻 Chat owner</b>: <a href=\"tg://user?id={owner_id}\">{owner_name}</a>\n👋 <b>Changed the welcome message</b>"
+  },
+  "filters": {
+    "access_denied": "🚫 Access denied",
+    "deleted_system_msg": "⚙️ System message deleted",
+    "arabic_ban_msg": "<b>Banned</b> {user} <b>for Arabic characters</b> 👳🏾‍♂️",
+    "bot_ban_msg": "<b>Banned bot</b> {user} 🤖",
+    "mute_for_bot_add": "Muted {user} <b>for 10 minutes for adding a bot</b> 🕵🏻‍♂️",
+    "mute_forward": "Muted {user} <b>for 5 minutes for forwarding</b> 📩",
+    "mute_link": "Muted {user} <b>for 5 minutes for posting a link</b> 🔗",
+    "mute_hyperlink": "Muted {user} <b>for 5 minutes for hyperlink</b> 🔍",
+    "mute_button": "Muted {user} <b>for 5 minutes for sending a button</b> 🖲️",
+    "mute_user_mention": "Muted {user} <b>for 10 minutes for mentioning a user</b> 🌀"
+  },
+  "ban": {
+    "banlist_msg": "🌌 Important message from Space! 🚀\n\n{user} was banned for violating the rules."
+  },
+  "roulette": {
+    "text": "🎰 <b>Mini-Roulette</b> 🎰\n\nGuess a number from:\n  0🟢\n  1🔴 2⚫ 3🔴 4⚫ 5🔴 6⚫\n  7🔴 8⚫ 9🔴 10⚫ 11🔴 12⚫\n\nPlace bets as text:\n  1000 к | 3000 1-6 | 5000 12\n\n🪑 Taken tables: 1/10\n\n🃏 Table 1:\n      Free\n\n🃏 Table 2:\n      Free     \n\n🃏 Table 3:\n      Free\n\n🃏 Table 4:\n      Free\n\n🃏 Table 5:\n      Free\n\n🃏 Table 6:\n      Free\n\n🃏 Table 7:\n      Free\n\n🃏 Table 8:\n      Free\n\n🃏 Table 9:\n      Free\n\n🃏 Table 10:\n      Free",
+    "inactivity_warning": "Without activity, the table will be freed in 60 sec",
+    "buttons": {
+      "open_mischief": "Open Mischief / Games"
+    },
+    "off_text": "🎰 Roulette is currently disabled.\nAdmins: ⚙️ Settings → 😈 Mischief / 🎮 Games → 🎰 Roulette — switch to ✅.",
+    "off_alert": "🎰 Roulette is disabled. Open Mischief / Games to enable it.",
+    "blacklist": "You are blacklisted. I won't talk to you!",
+    "open_hint": "ℹ️ You can open roulette by tapping the message this reply is attached to.",
+    "tables": {
+      "prefix": "🃏 Table",
+      "free_label": "Free"
+    },
+    "headers": {
+      "bets_section": "🎲 Bets by {username}:"
+    },
+    "all_tables_busy": "⚠️ All tables are busy, try later.",
+    "bet": {
+      "prep": "on",
+      "words": {
+        "black": [
+          "b",
+          "black",
+          "⚫",
+          "⚫️"
+        ],
+        "red": [
+          "r",
+          "red",
+          "🔴"
+        ],
+        "green": [
+          "g",
+          "green",
+          "🟢"
+        ],
+        "even": [
+          "even"
+        ],
+        "odd": [
+          "odd"
+        ],
+        "low": [
+          "1-6"
+        ],
+        "high": [
+          "7-12"
+        ]
+      }
+    },
+    "max_bets_reached": "⚠️ You placed the maximum number of bets.",
+    "bet_make_alert": "Place a bet.",
+    "bets_not_recognized": "⚠️ Bets not recognized.",
+    "insufficient_funds": "⚠️ Not enough coins. Bet less.",
+    "cooldown": {
+      "spin": "{name}, you can spin in <b>{time}</b> {emoji}.",
+      "bag": "{name}, you can get a bag in <b>{time}</b> {emoji}."
+    },
+    "spin": {
+      "caption": "👤 Player: {name}\n🎰 Roulette is spinning... (10 seconds)"
+    },
+    "win": {
+      "header": "👤 Player: {name}\n",
+      "cell": "🎯 Rolled: <b>{cell}</b>\n",
+      "bets_header": "🔻 Bets:\n",
+      "entry": {
+        "match_number": "✅ {amount} on {target} — win x5\n",
+        "match_range": "✅ {amount} on {target} — win x2\n",
+        "match_red": "✅ {amount} on 🔴 — win x2\n",
+        "match_black": "✅ {amount} on ⚫ — win x2\n",
+        "match_green": "✅ {amount} on 🟢 — win x10\n"
+      },
+      "entry_lose": "❌ {amount} on {target} — lose\n",
+      "balance": "\n💰 Balance: <b>{old}</b> -> <b>{new}</b> 🪙"
+    },
+    "log": {
+      "entry": "🕒 {time} • 🎯 <b>{cell}</b>\n\n👤 <b>{user}</b>\n🎲 {bets_count} bets\n💰 {old} → {new} 🪙"
+    },
+    "cancelled_message": "❌ {name}, roulette canceled.",
+    "cancel_not_owner": "🚫 You cannot cancel.",
+    "cancel_ok": "🛑 Roulette canceled.",
+    "history_empty": "History is empty.",
+    "history_header": "<b>🧾 Last 10 spins:</b>\n\n",
+    "already_spinning": "⚠️ Roulette is already spinning.",
+    "no_bets_to_double": "⚠️ You have no bets to double.",
+    "cannot_press_button": "🚫 You cannot press this button.",
+    "bag": {
+      "caption": "💰 {name}, you received {coins} coins.\n🪙 Balance: {balance}"
+    },
+    "min_bet": "⚠️ {name}, you can't bet less than {min} coins.",
+    "not_enough_coins": "⚠️ {user} Not enough coins. Available: {available}",
+    "not_enough_coins_double": "⚠️ {user} Not enough coins to double. Required: {need}, available: {available}",
+    "not_enough_coins_mention": "⚠️ <a href=\"tg://user?id={user_id}\">{user}</a> Not enough coins. Available: {available}"
+  },
+  "subscribe": {
+    "must_subscribe_pm_denied": "🚫 To use the bot, please subscribe to the channel:"
+  },
+  "start": {
+    "blacklist_block": "You are on the blacklist. I won't talk to you!",
+    "start_greet": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{START_TEXT}"
+  },
+  "help": {
+    "blacklist_block": "You are on the blacklist. I won't talk to you!",
+    "help_private": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{HELP_TEXT}",
+    "help_group": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{HELP_TEXT}",
+    "back_to_help": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,\nI need admin rights to work:\n    ✅ Delete Messages\n    ✅ Invite Links\n\nIf you use moderation features, also grant:\n    ⚠️ Restrict Members\n\nBy default, all group features are OFF 📴\nTo enable, send in your group: !космос\nThen tap the \"⚙️\" button",
+    "admins_cmds": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{ADMINS_CMDS}",
+    "moder_cmds": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{MODER_CMDS}",
+    "statics_cmds": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{STATICS_CMDS}",
+    "shalun_cmds": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{SHALUN_TEXT}"
+  },
+  "id": {
+    "header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>",
+    "chat_id": "Chat ID: <code>{chat_id}</code>",
+    "topic_id": "Topic ID: <code>{thread_id}</code>",
+    "chat": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\nChat ID: <code>{chat_id}</code>\n{topic_line}",
+    "topic_line": "Topic ID: <code>{thread_id}</code>"
+  },
+  "cosmos": {
+    "title": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n<tg-emoji emoji-id=\"5231200819986047254\">🔥</tg-emoji> Stats:",
+    "ping": "    📡 Ping: {ping} ms",
+    "req_count": "    <tg-emoji emoji-id=\"5264727218734524899\">❓</tg-emoji> Requests: {req_count}",
+    "rp_global": "    <tg-emoji emoji-id=\"5397753673130463064\">❓</tg-emoji> Global RP cmds: {count}",
+    "rp_local": "    <tg-emoji emoji-id=\"5213307977640979750\">❓</tg-emoji> Local RP cmds: {count}",
+    "weddings": "    <tg-emoji emoji-id=\"5282774082901793863\">❓</tg-emoji> Current weddings: {count}",
+    "marriages": "    💑 Global marriages: {count}",
+    "with_banana_and_coin": " <tg-emoji emoji-id=\"5224257782013769471\">❓</tg-emoji> With banana & coin: {count}",
+    "chats": "    <tg-emoji emoji-id=\"5213307977640979750\">❓</tg-emoji> Chats: {count}",
+    "users_total": "    🙎 Users: {count}",
+    "users_active": "        🏃 Active users: {count}",
+    "users_private": "    <tg-emoji emoji-id=\"5373012449597335010\">❓</tg-emoji> Users in PM: {count}"
+  },
+  "profile": {
+    "unknown_date": "Unknown",
+    "not_found": "⚠️ User not found in the database.",
+    "header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n🪪 Profile:",
+    "in_system": "    🪐 In <a href=\"tg://user?id={bot_id}\">{bot_name}</a> since <b>{created_at}</b>",
+    "name": "    👤 Name: {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>",
+    "username": "    🌀 Username: @{username}",
+    "username_none": "    🌀 Username: @Not set",
+    "id": "    🆔 ID: <code>{user_id}</code>",
+    "banana": "    🍌 Banana: {banana} cm",
+    "coins": "    🪙 Coins: {coins}",
+    "starcoins": "    🪐 Starcoins: {starcoins}",
+    "not_married": "    🦅 Not married",
+    "spouse": {
+      "wife": "Wife",
+      "husband": "Husband"
+    },
+    "married_title": "  💍 {who}: <a href=\"tg://user?id={spouse_id}\">{spouse_name}</a>",
+    "married_id": "         [<code>{spouse_id}</code>]",
+    "married_time": "  {time} ⌚️ {date}/📆 {weekday}",
+    "married_diff": "  ⏳ {diff}",
+    "roles": {
+      "owner": "    👑 Owner",
+      "engineer": "    👨🏻‍💻 Star Engineer",
+      "agent": "    🧑🏻‍🚀 Star Agent",
+      "chat_owner": "    🏛 Group Owner",
+      "chat_admin": "    🎖 Group Admin"
+    },
+    "admin_rights_title": "🛡 <b>Admin rights:</b>",
+    "admin_rights": {
+      "delete_messages": "🗑 Delete messages",
+      "restrict_members": "🚫 Restrict members",
+      "invite_users": "🔗 Invite users",
+      "pin_messages": "📌 Pin messages",
+      "change_info": "⚙️ Change group info",
+      "manage_chat": "📋 Manage chat",
+      "is_anonymous": "👻 Anonymous",
+      "promote_members": "📢 Promote members",
+      "manage_video_chats": "🎥 Manage video chats",
+      "post_messages": "✉️ Post messages",
+      "edit_messages": "✏️ Edit messages",
+      "manage_topics": "🏷 Manage topics"
+    },
+    "vip_status": "<b>👑 VIP user</b>",
+    "blacklist_title": "🚫 <b>User is in the blacklist</b>",
+    "blacklist_time": "    ⏰ <b>{time}</b>",
+    "spamlist_title": "🚫 <b>User is in the spam list</b>",
+    "spamlist_time": "    ⏰ <b>{time}</b>",
+    "diff": {
+      "y": "y",
+      "mo": "mo",
+      "d": "d",
+      "h": "h",
+      "m": "m"
+    },
+    "ikbs": {
+      "get_vip": "Get VIP 👑",
+      "profile_settings": "🔧 Profile Settings",
+      "get_starcoins": "🪐 Top up Starcoins",
+      "my_transaction": "💳 My Transactions",
+      "muted_list": "🚫 Muted List",
+      "profile_settings_ikb": {
+        "reg_date": "🗓 Registration Date",
+        "id": "🆔 ID",
+        "status": "🎖️ Group Status",
+        "marriage": "💍 Marriage",
+        "my_vip": "👑 My VIP"
+      }
+    }
+  },
+  "form": {
+      "header": "🪪 Profile:"
+  },
+  "vip": {
+    "desc_vip_sub": "<b><i>✨ Become VIP and unlock new features! ✨</i></b>\n\n<b>With VIP you get what others don’t:</b>\n\n<b>🔕 Turn off chat broadcasts.</b>\n<b>👁️ Hide profile elements.</b>\n<b>💔 Unlimited free divorces.</b>\n\n<b>No more limits — go premium and use the bot to the fullest! 🚀</b>",
+    "active_until_text": "Your VIP is active until {date} ⏰\nAfter payment, VIP will be extended until {new_date} 🔄",
+    "no_vip_text": "No VIP active ⛔\nAfter payment, VIP will be valid until {new_date} ✨",
+    "chosen_plan_text": "VIP for {months} month(s) selected! ⭐️\n\n{vip_text}\n\nDon’t miss all VIP benefits! 💎",
+    "owner_message": "👑 Since you are the bot owner, payment is not required. Your VIP will be activated automatically after pressing the button.",
+    "invoice_title": "✨ VIP Payment ✨",
+    "invoice_label": "⭐️ VIP {months} month(s)",
+    "ikbs": {
+      "1_month": "1 month",
+      "6_month": "6 months",
+      "12_month": "12 months",
+      "change_price": "Change price ⭐️",
+      "buy_vip": "Buy VIP 👑"
+    }
+  },
+  "transaction": {
+    "transaction_text": "Purchase of VIP subscription for {months} month(s).",
+    "success_payment": "✅ Payment successful!\n{amount} Starcoins have been added to your balance 🎉"
+  },
+  "bananas": {
+    "must_subscribe": "🚫 To use the bot, please subscribe to the channel:",
+    "cooldown_left": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\nYour banana: <b>{size} cm 🍌</b>\nYou can grow it in 📏\n<b>{time_left}</b> {clock}⏳\n\n🔝 To see your rank, send: <code>Top banana</code>",
+    "grown": "🍌 <b>{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>'s banana grew by {delta} cm.</b>\nNow it is <b>{new_size} cm</b>. 📏"
+  },
+  "rp": {
+    "local_header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n<b>📍 Local RP commands:</b>\n",
+    "adult_local_header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n<b>🔞 Local RP commands:</b>\n",
+    "local_empty": "— none yet —",
+    "cmd_line_reply": "<code>{cmd}</code> (Reply)\n"
+  },
+  "admins": {
+    "list_header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n<b>🤴🏻 Owner:</b>\n    <a href=\"tg://user?id={owner_id}\">{owner_name}</a>\n    <a href=\"tg://user?id={second_owner_id}\">{second_owner_name}</a>\n\n<b>👮🏼‍♂️ Star Agents:</b>\n",
+    "admin_with_name": "    <a href=\"tg://user?id={id}\">{name}</a>",
+    "admin_no_data": "    {id} (no data)",
+    "broadcast_flag": "      Broadcast: {flag}",
+    "remove_hint": "      <code>-agent {id}</code>"
+  },
+  "links": {
+    "list_header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n<b>Allowed links:</b>\n",
+    "item": "<code>{link}</code>"
+  },
+  "stop": {
+    "self_forbidden": "⚠️ {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, you cannot target yourself with \"!стоп\".",
+    "id_not_found": "⚠️ {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, user with ID {target_id} not found.",
+    "username_not_found": "⚠️ {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, user with username @{username} not found.",
+    "set_by_id": "🚫 {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, user <a href=\"tg://user?id={target_id}\">{target_name}</a> will no longer be able to tag you. Send again to disable.",
+    "unset_by_id": "✅ {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, user <a href=\"tg://user?id={target_id}\">{target_name}</a> will be able to tag you. Send again to enable.",
+    "set_reply": "🚫 {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, user <a href=\"tg://user?id={target_id}\">{target_name}</a> will no longer be able to tag you. Send again to change.",
+    "unset_reply": "✅ {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, user <a href=\"tg://user?id={target_id}\">{target_name}</a> will be able to tag you. Send again to change.",
+    "need_args": "\"!стоп\" must be a reply or contain an ID/username, e.g. <code>!стоп 1234567</code> or <code>!стоп @username</code>.",
+    "cannot_detect_reply_user": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, couldn't detect the replied user."
+  },
+  "delete": {
+    "not_allowed": "🚫 You cannot delete this message."
+  },
+  "duel": {
+    "hud": {
+      "title": "<b>Space Duel <i>“Star Fight”</i></b> 💫",
+      "versus": "{challenger} ⚔️ {challenged}",
+      "health_label": "Health",
+      "shield_label": "Shield integrity",
+      "energy_label": "Energy",
+      "phaser_label": "Phaser",
+      "action": {
+        "maneuver": "Activated maneuver 🌀",
+        "shield": "Activated shield 🛡️"
+      },
+      "next_turn": "🛰️ {next_link}, your turn..."
+    },
+    "invite": {
+      "header": "{inviter} challenges {opponent} to a <b>Space Duel <i>“Star Fight”</i></b> 💫",
+      "goal": "Goal — <i>defeat your opponent using space weapons, maneuvers, and shields.</i>",
+      "kit": "Each player has:\n🔫 <b>Phaser</b> — attacks.\n🌀 <b>Maneuver</b> — chance to dodge.\n🛡️ <b>Shield</b> — blocks damage.\n🌡️ <b>Overheat</b> — frequent shots overheat the weapon.\n🌠 <b>Orbital bonuses</b> — random buffs.",
+      "enter_bet": "💫 {inviter}, enter your stake for the interstellar clash:"
+    },
+    "post_bet": {
+      "prices_line": "{inviter}: -{prize} 🪙\n{opponent}: -{prize} 🪙",
+      "prize_pool": "🏆 Prize pool: {pool} 💵",
+      "prompt_challenged": "⚔️ {challenged}, choose: join the duel or run 🏃"
+    },
+    "errors": {
+      "pm_unavailable": "⚠️ The \"!дуэль\" command is not available in private messages.",
+      "self_forbidden": "⚠️ {you}, you can't challenge yourself to a Space Duel.",
+      "bot_forbidden": "⚠️ {you}, you can't challenge the bot to a Space Duel.",
+      "user_not_found_by_id": "⚠️ {you}, user with ID {uid} was not found in the chat.",
+      "already_in_duel_by_self": "⚠️ You are already in a Space Duel.",
+      "opponent_already_in_duel": "⚠️ Your opponent is already in a Space Duel.",
+      "amount_integer_required": "⚠️ Enter the number of coins as an integer.",
+      "amount_range": "⚠️ You can stake from 1000 up to <b>{max}</b> 🪙"
+    },
+    "cancel": {
+      "title": "<b>Space Duel <i>“Star Fight”</i> canceled</b> 💫",
+      "runner_left": "{runner} left the battle orbit 🚀"
+    },
+    "give_up": {
+      "line": "{runner} surrendered. Space does not forgive weakness."
+    },
+    "coins": {
+      "loser": "💀 {loser}: -{prize} 🪙",
+      "winner": "👑 {winner}: <b>+{gain}</b> 🪙"
+    },
+    "guide": "🔫 Phaser — deals 20 damage\n🌀 Maneuver — 50% dodge chance (-30⚡)\n🛡️ Shield — integrity affects block chance\n🌡️ Overheat — phaser overheats at 100°C\n🔋 Energy — +10⚡ each turn",
+    "actions": {
+      "phaser_overheated": "🌡️ Phaser overheated — cannot fire.\nChoose another action 🕹️",
+      "no_energy_maneuver": "🪫 Not enough energy — maneuver unavailable.\nChoose another action 🕹️",
+      "hit_direct": "💥 Direct hit! {defender} loses 20 HP!",
+      "shield_blocked": "{attacker} fires, but {defender} blocks it! Shield -10% 🛡️",
+      "shield_breached": "{attacker} breaks through {defender}'s shield 💢",
+      "dodge_success": "💨 The shot missed — {defender} dodged at the last moment!",
+      "dodge_fail": "⚠️ Maneuver failed — {attacker} hits {defender}!"
+    },
+    "finish": {
+      "header": "🏁 Duel finished:",
+      "winner": "{winner} wins 👑",
+      "loser_zero": "{loser} lost all health 💔"
+    }
+  },
+  "exit": {
+    "admin_block": "🔒 {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, admins and owners cannot leave via this command.\nUse the standard Telegram way — “Leave group”. 🚀",
+    "error": "⚠️ Error:\n<code>{error}</code>",
+    "ok": "🚪 {title} <a href=\"tg://user?id={user_id}\">{user_name}</a> leaves our galaxy 🌌 and exits the chat with the command <code>{cmd}</code>.\nSee you among the stars! 👨🏻‍🚀✨"
+  },
+  "common": {
+    "blacklist_block": "You are on the blacklist. I won't talk to you!"
+  },
+  "transfer": {
+    "self_forbidden": "⚠️ {user_link}, you cannot target yourself with \"!передать\".",
+    "bot_forbidden": "⚠️ {user_link}, you cannot transfer currency to the bot.",
+    "choose_currency": "Choose which currency to transfer to {target_link} 📩",
+    "not_found_or_unregistered": "⚠️ The user was not found or is not registered in the bot.",
+    "need_args": "{user_link}, the \"!передать\" command must contain an ID/username or be a reply, e.g. <code>!передать 1234567</code> or <code>!передать @username</code>.",
+    "enter_amount_coins": "Enter the number of coins to transfer 💰",
+    "enter_amount_starcoins": "Enter the number of starcoins to transfer 💰",
+    "confirm": "💳 Confirm transferring <b>{amount} {emoji}</b> to {target_link}.",
+    "must_be_integer_coins": "⚠️ Enter the number of coins as an integer.",
+    "must_be_integer_starcoins": "⚠️ Enter the number of starcoins as an integer.",
+    "range_coins": "⚠️ You can transfer from {min} up to <b>{max}</b> 🪙",
+    "range_starcoins": "⚠️ You can transfer from {min} up to <b>{max}</b> 🪐",
+    "success": "💳 {user_link} transferred <b>{amount} {emoji}</b> to {target_link}."
+  },
+  "kb": {
+    "subscribe": {
+      "subscribe": "🔔 Subscribe",
+      "i_subscribed": "✅ I've subscribed"
+    },
+    "nav": {
+      "minus5": "⏪-5",
+      "minus50": "⏮️-50",
+      "plus50": "⏭️+50",
+      "plus5": "⏩+5",
+      "prev": "⬅️-1",
+      "delete": "🗑️",
+      "next": "➡️+1",
+      "clear": "🧹 Clear"
+    },
+    "common": {
+      "back": "⬅️ Back",
+      "delete": "🗑️ Delete",
+      "support": "👨🏻‍💻 Support",
+      "news": "🔔 News",
+      "for_all": "🙍🏻‍♂️ For everyone",
+      "for_admins": "👮🏻‍♂️ For admins",
+      "add_bot": "Add bot"
+    },
+    "help_tabs": {
+      "moder": "🔱 Moderator",
+      "prankster": "😈 Prankster",
+      "stats": "📈 Stats"
+    },
+    "roulette": {
+      "range_1_3": "1k 1–3",
+      "range_4_6": "1k 4–6",
+      "range_7_9": "1k 7–9",
+      "range_10_12": "1k 10–12",
+      "on_red": "1k 🔴",
+      "on_black": "1k ⚫️",
+      "on_green": "1k 🟢",
+      "again": "🆕 Again",
+      "double": "2️⃣ Double",
+      "spin": "🔄 Spin",
+      "bag": "💰 Bag",
+      "more_coins": "🎁 Get more coins",
+      "cancel": "🛑 Cancel",
+      "join": "🎲 Join"
+    },
+    "wedding": {
+      "cancel": "💔 Cancel wedding",
+      "husband": "🤵 Groom",
+      "wife": "👰 Bride",
+      "registrar": "🖊 Registrar",
+      "witness_man": "👨‍💼 Best man",
+      "witness_woman": "👩‍💼 Maid of honor",
+      "guest": "🥂 Guest",
+      "sign": "✍️ Sign",
+      "marriage": "💍 Get married"
+    },
+    "divorce": {
+      "yes": "💔 Yes",
+      "no": "❤️‍🩹 No",
+      "confirm_yes": "✅ Yes",
+      "confirm_no": "❌ No"
+    },
+    "profile": {
+      "muted_list": "🚫 Muted list"
+    },
+    "lang_menu": {
+      "ru": "🇷🇺 Russian",
+      "ua": "🇺🇦 Ukrainian",
+      "en": "🇺🇸 English",
+      "back": "⬅️ Back"
+    },
+    "blacklist": {
+      "groups": "👥 Groups",
+      "users": "👤 Users",
+      "banlist": "⛔️ Ban list"
+    },
+    "rp": {
+      "adult_show": "🔞 Show 18+ commands",
+      "regular_show": "📍 Show regular",
+      "close": "❌ Close",
+      "type_regular": "Type: Regular ✅",
+      "type_nsfw": "Type: 18+ 🔞",
+      "cancel": "Cancel",
+      "guide": "ℹ️ Guide",
+      "phaser": "🔫 Phaser",
+      "maneuver": "🌀 Maneuver",
+      "shield": "🛡️ Shield",
+      "give_up": "🏳️ Give up",
+      "back": "⬅️ Back"
+    },
+    "chat_mgmt": {
+      "kick": "👟 Kick",
+      "migration": "🪶 Migration",
+      "welcome": "👋 Welcome",
+      "langs": "🌐 Languages",
+      "back": "⬅️ Back"
+    },
+    "migration": {
+      "confirm": "✅ Confirm",
+      "cancel": "❌ Cancel"
+    },
+    "events": {
+      "what_to_log": "🎛 What to log to the channel?",
+      "change_log_group": "🔄 Change log channel",
+      "delete_log_group": "❌ Remove log channel",
+      "back": "⬅️ Back",
+      "menu_title": "🔍 Event Channel",
+      "menu_description": "Here you can configure the channel where all events of this group will be saved.\\nTo add a channel, you must be the channel owner and @iSpaceRobot must be an Admin of this channel. If these conditions are met, click the button below.\\n<i>The channel can be either public or private.</i>",
+      "current_log_chat": "Current log-chat:",
+      "not_found": "Not found.",
+      "add_chat_first": "⚠️ Add a log chat before changing settings.",
+      "logging_state": "Logging {event} - {state}",
+      "logging_enabled": "enabled ✅",
+      "logging_disabled": "disabled 📴",
+      "introductions_info": "➕ Records users joining the group.",
+      "exits_info": "🚪 Records users leaving the group.",
+      "punishments_info": "⚖️ Records automatically applied punishments (antispam, antiflood, banned words, etc.).",
+      "arab_info": "👳🏾‍♂️ Records punishments for using Arabic symbols.",
+      "bot_added_info": "🤖 Records actions related to adding bots to the group.",
+      "ban_mute_info": "🔒 Records bans, unbans, mutes, unmutes, and removals by admins/moderators.",
+      "admin_info": "🛡️ Records admin summons with @admin.",
+      "settings_info": "⚙️ Records settings changes.",
+      "role_info": "🎭 Records role assignments and removals.",
+      "change_log_group_denied": "🚫 You don’t have access to this button.",
+      "current_chat_info": "Current log-chat:",
+      "send_chat_id": "Send the chat ID where logs will be sent.\\nTo get the chat ID, use the command <code>/id</code> in it.",
+      "chat_set_success": "✅ Chat {title} has been assigned for logs.\\n\\nNow you can configure what logs you need in the section \"🎛 What to log in the channel?\"",
+      "chat_not_found": "⚠️ Chat with ID: <code>{chat_id}</code> was not found. If the bot is not in this chat, you need to add it.",
+      "chat_deleted": "🗑️ You successfully removed the log chat. To receive logs again, assign a chat.",
+      "names": {
+        "introductions": "joinings",
+        "exits": "leavings",
+        "punishments": "punishments",
+        "arab": "arab symbols",
+        "bot_added": "bot additions",
+        "ban_mute": "bans/mutes",
+        "admin": "@Admin",
+        "settings": "settings changes",
+        "role": "roles"
+      }
+    },
+    "events_settings": {
+      "introductions": "➕ Joins",
+      "exits": "🚪 Leaves",
+      "punishments": "⚖️ Punishments",
+      "arab": "👳🏾‍♂️ Arabic symbols",
+      "bot_added": "🤖 Bot added",
+      "ban_mute": "🔒 Block/Mute",
+      "admin": "🛡️ @Admin",
+      "settings": "⚙️ Settings",
+      "role": "🎭 Roles",
+      "back": "⬅️ Back"
+    },
+    "night_mode": {
+      "enable": "✅ Enable",
+      "disable": "✖️ Disable",
+      "delete_media": "📸 Delete media",
+      "global_silence": "🌐 Global silence",
+      "silence": "🤫 Silence",
+      "notify": "🔔 Notifications",
+      "set_time": "⏱️ Set time",
+      "timezone": "🌍 Time zone",
+      "back": "⬅️ Back"
+    },
+    "time_change": {
+      "tutorial": "ℹ️ Tutorial",
+      "start": "▶️ Start",
+      "end": "⏹️ End",
+      "confirm": "✅ Confirm",
+      "back": "⬅️ Back"
+    },
+    "timezones": {
+      "back": "⬅️ Back"
+    },
+    "kick": {
+      "inactive": "💤 Kick inactive",
+      "active": "🚀 Kick active",
+      "nubs": "👶 Kick newbies",
+      "silence": "🤐 Kick silent",
+      "by_period": "📆 By period",
+      "by_count": "🔢 By user count",
+      "mix": "🧮 By period & count",
+      "back": "⬅️ Back",
+      "confirm": "✅ Confirm",
+      "cancel": "❌ Cancel"
+    },
+    "duel": {
+      "coins": "🪙 Coins",
+      "mute": "🔇 Mute",
+      "kick": "👟 Kick",
+      "ban": "⛔️ Ban",
+      "agree": "⚔️ Accept",
+      "decline": "🏃 Decline"
+    },
+    "currency": {
+      "coins": "🪙 Coins",
+      "starcoins": "🪐 Starcoins",
+      "confirm": "✅ Confirm",
+      "cancel": "❌ Cancel"
+    },
+    "shalosti": {
+      "nsfw": "🔞 RP 18+",
+      "wedding": "💍 Weddings",
+      "roulette": "🎰 Roulette"
+    },
+    "delete": {
+      "trash": "🗑️",
+      "back_like": "⬅️ Back",
+      "cancel": "❌ Cancel"
+    },
+    "spamlist": {
+      "clear": "🧹 Clear",
+      "delete": "🗑️",
+      "confirm_yes": "✅ Yes",
+      "confirm_no": "❌ No"
+    },
+    "generation": {
+      "cancel": "⛔ Cancel"
+    },
+    "open_shalosti": "😈 Open “Pranks / Games”"
+  },
+  "nav": {
+    "alerts": {
+      "not_your_panel": "🚫 This panel was opened by another user.",
+      "swoosh": "whoosh ✨",
+      "last_page": "You are on the last page."
+    },
+    "tops": {
+      "banana": "🏆 Global banana ranking:",
+      "coins": "🏆 Global coin ranking:",
+      "msg": "🏆 Global spammer ranking:",
+      "group": "🏆 Global group ranking:"
+    },
+    "labels": {
+      "your_banana": " Your banana: {value} {unit} 🍌",
+      "your_balance": " Your balance: {value} 🪙",
+      "msgs_count_line": " Messages: {value} 🗯",
+      "your_place": " Your place: [{place}/{count}] 🔝",
+      "chat_place": " Group place: [{place}/{count}] 🔝",
+      "on_page": " On page: [{user_page}/{total_pages}] 🗒",
+      "page": " Page [{page}/{total_pages}] 🗂"
+    },
+    "marriages": {
+      "your": "💍 Your marriage:",
+      "spouses": " Spouse(s): {husband} ❤️ {wife}",
+      "date": " 🗓 {date}",
+      "duration": " ⌚️ {duration}",
+      "list_title": "\n\n💒 List of all marriages:",
+      "none": "🦅 You are not married."
+    },
+    "spamlist": {
+      "title": "⚠️ Spammer list:",
+      "count": " 🔢 Count: {count}"
+    },
+    "units": {
+      "cm": "cm",
+      "y": "y",
+      "mo": "mo",
+      "d": "d",
+      "h": "h",
+      "m": "m"
+    }
+  },
+  "tops": {
+    "common": {
+      "your_place": "Your place: [{place}/{total}] 🔝",
+      "on_page": "On page: [{page}/{total}] 🗒",
+      "page": "Page [{page}/{total}] 🗂",
+      "blacklist_dm": "You are blacklisted. I won't talk to you!"
+    },
+    "banana": {
+      "title": "🏆 Global bananas ranking:",
+      "your_value": "Your banana: {value} cm 🍌"
+    },
+    "coins": {
+      "title": "🏆 Global coins ranking:",
+      "your_value": "Your balance: {value} 🪙"
+    },
+    "messages": {
+      "title": "🏆 Global spam ranking:",
+      "your_value": "Messages: {value} 🗯"
+    },
+    "groups": {
+      "title": "🏆 Global chats ranking:",
+      "group_value": "Messages: {value} 🗯",
+      "group_place": "Chat rank: [{place}/{total}] 🔝"
+    },
+    "marriages": {
+      "title_list_prefix": "💒 List of all marriages:",
+      "not_married": "🦅 You are not married."
+    },
+    "spamlist": {
+      "title": "⚠️ Spammers list:",
+      "count": "🔢 Count: {count}"
+    },
+    "errors": {
+      "no_permission_spam": "🚫 {user}, you don't have permission to use the \"!spam\" command."
+    }
+  },
+  "texts": {
+    "help": "I need admin rights to work:\n    ✅ Delete Messages\n    ✅ Invite Users\n\nIf you use moderation features, also grant:\n    ⚠️ Restrict/Block Users\n\nBy default all features in groups are OFF 📴\nTo enable, send: !космос in your group, then press \"⚙️\".",
+    "welcome": "@iSpaceRobot — your chat guardian!\n\n👮 Keeps the vibe and moderates the chat.\n🎲 Fun and games for good times.\n⚙️ Flexible settings for admins.\n🔒 Protection against spam and unwanted messages.\n\n📌 /help — full list of commands.\n\n🔗 <a href=\"https://t.me/catalog_iSpace\">Catalog ✨</a>",
+    "start": "Welcome to the chat bot!\n\nThis bot helps you manage your chat and have fun. Moderate discussions with ease and play with friends.\n\n🛠 Chat management:\nAdmins can moderate quickly, punish violators, and keep order.\n\n🎮 Games and fun:\nSpin the roulette, grow your \"banana\", and join other activities!\n\n🌐 Flexible settings:\nTune everything from link filters to custom RP commands.\n\n🔒 Safety:\nNo unwanted links or spam! The bot keeps your space comfy.\n\nUse /help to see all features."
+  },
+  "commands": {
+    "admins": "👮🏻‍♂️ Admin Commands:\n<code>+агент</code> (broadcast:yes) (Reply) — grant bot admin\n<code>-агент</code> (Reply/[ID]) — revoke admin\n<code>!рассылка</code> (Reply) — broadcast the replied message\n<code>!логи</code> — set this chat as logs chat\n<code>!реклама</code> — this chat will get broadcast stats\n<code>+чс &lt;ID&gt;/</code> (Reply) — add user/chat to blacklist\n<code>-чс &lt;ID&gt;/</code> (Reply) — remove from blacklist\n<code>+грп &lt;cmd&gt; &lt;text&gt; &lt;GIF_ID&gt;</code> — add global RP command\n<code>-грп &lt;cmd&gt;</code> — delete global RP command",
+    "moderators": "🔱 Moderator Commands:\n<code>!бан &lt;duration (10м/2ч)&gt;</code> (Reply) — ban\n<code>!кик</code> (Reply) — kick\n<code>!мут &lt;duration (10м/2ч)&gt;</code> (Reply) — mute\n<code>!ремут</code> (Reply) — unmute\n<code>+ссылка &lt;link&gt;</code> — allow a link when antilink is ON\n<code>-ссылка &lt;link&gt;</code> — remove allowed link\n<code>+рп (cmd) (text) (GIF_ID)</code> — add local RP command\n<code>-рп (cmd)</code> — delete local RP command\n<code>!стоп</code> (Reply or ID) — toggle mentions/replies from a user\n<code>!выход</code> — bot leaves the group immediately.",
+    "statics": "📈 Statics Commands:\n<code>/start</code> — start\n<code>/help</code> — commands list\n<code>/id</code> — get chat ID\n<code>!космос</code> — bot stats & settings\n<code>!проф</code> — user profile\n<code>!агенты</code> — list of agent-admins\n<code>Топ банан</code> — top users by banana\n<code>Топ смс</code> — top users by messages\n<code>Топ</code> — top chats by messages\n<code>Топ монет</code> — top users by coins\n<code>!ссылки</code> — list of allowed links"
+  },
+  "shalun": {
+    "menu": "😈 Prankster Commands:\n<code>!банан</code> — grow banana\n<code>!рулетка</code> — open roulette\n<code>!свадьба</code> — start a wedding (groom starts)\n<code>!развод</code> — divorce\n<code>!грп</code> — list global RP (all chats)\n<code>!рп</code> — list local RP (this chat)\n\nGlobal RP commands:\n",
+    "local_header": "<b>Local RP commands:</b>\n"
+  },
+  "help_menu": {
+    "head": "<b>Global RP commands</b>:\n<code>!свадьба</code> (Reply) — get married\n<code>!банан</code> (Reply) — banana growth\n"
+  },
+  "tutorials": {
+    "add_grp_cmd": "Wrong command format!\nExample:\nLine: <code>+рп !взять name1 &lt;b&gt;<b>взял(а)</b>&lt;/b&gt; на руки name2 🤗. 48</code>\nCommand: !взять\nText: name1 <b>взял(а)</b> на руки name2.\nGIF ID: 48"
+  },
+  "infos": {
+    "systemmsg": "🔧 System — deletes system messages (joins/leaves/removals).",
+    "antiarab": "👳🏾‍♂️ Arabic — deletes Arabic letters and bans (also for similar names/bios).",
+    "antibot": "🤖 Bots — bans new bots; muting the adder for 10 minutes.",
+    "antichannel": "👤 Channels — deletes messages sent as a channel and blocks that mode.",
+    "antiforward": "📢 Forwards — deletes and mutes 5 minutes for forwards from channels (except the linked one).",
+    "antilink": "🔗 Links — deletes and mutes 5 minutes for external links.",
+    "antihyper": "🔍 Hyperlinks — deletes and mutes 5 minutes for hyperlinks.",
+    "antibutton": "🖲️ Buttons — deletes and mutes 5 minutes for links in buttons.",
+    "antiuser": "🌀 @Users — deletes and mutes 10 minutes for @mentions (channels/groups/bots).",
+    "antispam": "🛡️ Antispam — deletes and bans for spam (duplicates, flood, etc.).",
+    "shalosti": "😈 Pranks / 🎮 Games — RP 18+, Weddings, Roulette. Tap ➡️ to open.",
+    "wedding": "💍 Weddings — register marriages/divorces. Toggle here.",
+    "roulette": "🎰 Roulette — mini-game. Right button — toggle bets/spins."
+  },
+  "reactions": {
+    "to_owner_pins": [
+      "You’re the pin god! 👑📌",
+      "Every pin of yours is art! 🎨📌",
+      "With your pins, this chat stays on top! 🔥📌",
+      "Your pins are masterpieces—unmatched! 🏆📌",
+      "Each pin is like a new law! 📜📌",
+      "Only true masters pin like you! 💥📌",
+      "No one pins as slick as you! 🌟📌",
+      "You make pins epic—every message becomes legend! 🔥📌",
+      "You command pins like a strategist! ⚔️📌",
+      "Pin is your scepter of power! 🛠️📌",
+      "Your pins hit the target like Cupid’s arrows! 💘📌",
+      "You make pins matter—without you they’re nothing! 🌟📌",
+      "You deserve an award for best pin strategy! 🏅📌",
+      "If pinning were Olympic, you’d be champ! 🥇📌",
+      "Each pin is a turning point in chat history! 🔄📌",
+      "Pinning is art—and you’re the grand artist! 🎨📌",
+      "Your pin is the final chord of a symphony! 🎶📌",
+      "Your pins are milestones—you write history! 📚📌"
+    ],
+    "to_pin": [
+      "Who gave him admin?",
+      "Please, take this person’s pin rights away!",
+      "Enough!",
+      "And what is this?",
+      "My god, who allowed this pin?",
+      "Pin-addict!!!",
+      "...",
+      "Much fuss for nothing—no one will read this!",
+      "Isn’t he tired of pinning?",
+      "Stop pinning nonsense -_-",
+      "Nobody cares -.-",
+      "Nothing better to do?",
+      "Pin your butt instead",
+      "No one is interested anyway.",
+      "What are you even saying, storyteller :)",
+      "Blah blah blah..."
+    ],
+    "to_pin_night": [
+      "Ufff",
+      "Everyone’s sleeping!",
+      "Let us sleep!",
+      "Maybe stop already?",
+      "Why with notification?!",
+      "I just dozed off and you pin this now("
+    ]
+  },
+  "weddings": {
+    "close_people": "A cozy hall, a few close people, quiet congratulations. Witnesses smile as rings are exchanged. The registrar declares them spouses; soft applause fills the air. They hug, feeling the warmth and support of those who came to share the moment. 🥂",
+    "with_guests": "The murmur fades as the couple says the treasured “yes.” Applause erupts, confetti flies, music plays. Friends and family rush to congratulate; toasts follow one after another. The wedding ignites into a bright celebration where love is the star. 🎶💍"
+  },
+  "logs": {
+    "new_user": "🎂 New user in bot PM!\n👤 Name: {user_link}\n🌀 User: {username}\n🆔 ID: <code>{user_id}</code>\n🍌 Banana: {banana} cm\n💰 Coins: {coins}\n{in_blacklist}\n#new_user 🆕 {bl_tag}",
+    "in_blacklist_yes": "💔 In blacklist: yes (ignoring them)",
+    "in_blacklist_no": "❤️ In blacklist: no",
+    "bl_tag_yes": "#in_blacklist 💔",
+    "bl_tag_no": "",
+    "new_chat": "🥳 I was added to a chat!\n💬 Title: <a href='{chat_link}'>{chat_title}</a>\n🆔 Group ID: <code>{chat_id}</code>\n🔗 Link: {invite_link}\n👥 Members: <b>{members}</b>\n{in_blacklist}\n\n👤 Name: {adder_link}\n🌀 User: {adder_username}\n🆔 ID: <code>{adder_id}</code>\n\n#new_chat ➕ {bl_tag}",
+    "bot_kicked": "👢 I was removed from a chat!\n💬 Title: <code>{chat_title}</code>\n🆔 Group ID: <code>{chat_id}</code>\n❤️ In blacklist: no\n\n👤 Remover: {remover_link}\n🌀 User: {remover_username}\n🆔 ID: <code>{remover_id}</code>\n\n#bot_kicked ➖",
+    "bot_left": "👟 I left a chat!\n💬 Title: <a href='{chat_link}'>{chat_title}</a>\n🆔 Group ID: <code>{chat_id}</code>\n👥 Members: <b>{members}</b>\n🔗 Link: {invite_link}\n❤️ In blacklist: yes\n\n#bot_left ➖",
+    "banlist_add": "🗝 User added to banlist!\n👤 {user_link}\n🌀 User: {username}\n🆔 ID: <code>{user_id}</code>\n#add_user_to_banlist ⛔️",
+    "banlist_found": "🗝 Found & banned user from banlist!\n👤 {user_link}\n🌀 User: {username}\n🆔 ID: <code>{user_id}</code>\n\n💬 Chat: <a href='{chat_link}'>{chat_title}</a>\n🆔 Group ID: <code>{chat_id}</code>\n👥 Members: <b>{members}</b>\n🔗 Link: {invite_link}\n#find_user_from_banlist 🔎",
+    "banlist_delete": "🗝 User removed from banlist!\n👤 {user_link}\n🌀 User: {username}\n🆔 ID: <code>{user_id}</code>\n#delete_user_from_banlist ❎",
+    "spamlist_add": "🗝 User added to spamlist!\n👤 {user_link}\n🌀 User: {username}\n🆔 ID: <code>{user_id}</code>\n💬 Chat: <a href='{chat_link_full}'>{chat_title}</a>\n\n🛡 <b>Bot rights:</b>\n{rights_list}\n#add_user_to_spamlist ⛔️",
+    "spamlist_found": "🗝 Found & banned user from spamlist!\n👤 {user_link}\n🌀 User: {username}\n🆔 ID: <code>{user_id}</code>\n\n💬 Title: <a href='{chat_link}'>{chat_title}</a>\n🆔 Group ID: <code>{chat_id}</code>\n👥 Members: <b>{members}</b>\n🔗 Link: {invite_link}\n#find_user_from_spamlist 🔎",
+    "spamlist_delete": "🗝 User removed from spamlist!\n👤 {user_link}\n🌀 User: {username}\n🆔 ID: <code>{user_id}</code>\n#delete_user_from_spamlist ❎",
+    "spamlist_clear": "🗝 Spamlist cleared!\n👤 Users:\n{users_list}\n#clear_spamlist 🧹",
+    "blacklist_add": "🗝 User added to blacklist!\n👤 {user_link}\n🌀 User: {username}\n🆔 ID: <code>{user_id}</code>\n#add_user_to_blacklist 🔐",
+    "blacklist_delete": "📤 User removed from blacklist!\n👤 {user_link}\n🌀 User: {username}\n🆔 ID: <code>{user_id}</code>\n#delete_user_from_blacklist 🔓",
+    "blacklist_chat_add": "🗝 Group added to blacklist!\n👤 Title: <code>{chat_title}</code>\n🆔 Group ID: <code>{chat_id}</code>\n👥 Members: <b>{members}</b>\n🔗 Link: {invite_link}\n#add_chat_to_blacklist 🔐",
+    "blacklist_chat_delete": "📤 Removed from blacklist: {entity}!\n🆔 ID: <code>{id}</code>\n#delete_chat_from_blacklist 🔓",
+    "daily_queries": "📆 Daily report!\n🕰 For: {date}\n🔄 Requests in last 24h: {count}\n\n0️⃣ Counter reset.\n\n#reset_queries",
+    "daily_clean_header": "🧹 <b>Daily clean-up!</b>",
+    "daily_clean_progress": "💬 Chats checked: {total}\n\n✅ Working: {ok}\n    👤 Users: {users}\n\n❌ Not working: {bad}\n    ⛔️ Forbidden: {forbidden}/{bad_fb}\n    ♻️ Deleted: {not_found}/{bad_all}\n    ❗️ Other errors: {other}/{bad_all}\n\n    🗑 Removed from DB: {removed}\n\n 🌀 Usernames updated: {updated}\n\n🛜 In progress\n\n#daily_clean",
+    "daily_clean_done": "🧹 <b>Daily clean-up!</b>\n\n💬 Chats total: {total}\n\n✅ Working: {ok}\n    👤 Users: {users}\n\n❌ Not working: {bad}\n    ⛔️ Forbidden: {forbidden}/{bad_fb}\n    ♻️ Deleted: {not_found}/{bad_all}\n    ❗️ Other errors: {other}/{bad_all}\n\n    🗑 Removed from DB: {removed}\n\n 🌀 Usernames updated: {updated}\n\n⏱️ Duration: {m}m {s}s {ms}ms\n\n✅ Finished ✅\n\n#daily_clean",
+    "broadcast_item": "<b>{index}.</b> ✅ Broadcast sent!\n💬 Title: <a href='{chat_link}'>{chat_title}</a>\n🆔 Group ID: <code>{chat_id}</code>\n🔗 Link: {invite_link}\n👥 Members: <b>{members}</b>\n\n#broadcast_successfully 📩",
+    "broadcast_error": "🚨 Broadcast error!\n💬 Title: <a href='{chat_link}'>{chat_title}</a>\n🆔 Group ID: <code>{chat_id}</code>\n🔗 Link: {invite_link}\n👥 Members: <b>{members}</b>\n\n ❗️ Error: <code>{error}</code>\n\n#broadcast_error ⚠️",
+    "broadcast_error_not_found": "🚨 Broadcast error!\n🆔 Group ID: <code>{chat_id}</code>\n\n ❗️ Error: <code>{error}</code>\n\n#broadcast_error ⚠️",
+    "broadcast_no_rights_media": "⚠️ Not enough rights!\n💬 Title: <a href='{chat_link}'>{chat_title}</a>\n🆔 Group ID: <code>{chat_id}</code>\n🔗 Link: {invite_link}\n👥 Members: <b>{members}</b>\n\n 📷 Message sent without media due to insufficient rights\n\n#no_rights_to_send_media 🚫"
+  },
+  "my_commands": {
+    "start": "Learn about the bot",
+    "help": "Commands list"
+  },
+  "guard": {
+    "weddings_off_explain": "💍 The “Weddings” section is currently off.\nAdmins: ⚙️ Settings → 😈 Pranks / 🎮 Games → 💍 Weddings — switch to ✅.",
+    "weddings_off_alert": "💍 Weddings are off. Open: Settings → Pranks / Games → Weddings → ✅"
+  },
+  "create_wedding_text": {
+    "proposal": "{husband} proposes to hold the wedding ceremony 👩‍❤️‍💋‍👨",
+    "started_intro": "Amid the registrar’s solemn words and the lovers’ tender gaze, their new chapter begins—a wedding where two hearts are woven into one. 💍✨\n",
+    "lines": {
+      "husband": "🤵🏻 Groom: {husband} {ok}",
+      "wife": "👰🏻‍♀️ Bride: {wife} {ok}",
+      "registrar": "🖊️ Registrar: {registrar}",
+      "witness_man": "👨🏻‍💼 Best man: {witness_man}",
+      "witness_woman": "👩🏻‍💼 Maid of honor: {witness_woman}",
+      "guests": "🥂 Guests: {guests}"
+    },
+    "guests_dash": "-",
+    "scenes": {
+      "close_people": "A cozy hall, a few close people, quiet congratulations. Witnesses smile as rings are exchanged. The registrar declares them spouses; soft applause fills the air. They hug, feeling the warmth and support of those who came to share the moment. 🥂",
+      "with_guests": "The murmur fades as the couple says the treasured “yes.” Applause erupts, confetti flies, music plays. Friends and family rush to congratulate; toasts follow one after another. The wedding ignites into a bright celebration where love is the star. 🎶💍"
+    }
+  },
+  "cmd_wedding": {
+    "no_private": "⚠️ {user}, you can’t organize a wedding in private messages.",
+    "need_reply": "{user}, the \"!свадьба\" command must be the groom’s reply to the bride’s message.",
+    "no_self": "{user}, you can’t use \"!свадьба\" on yourself.",
+    "you_married_header": "{user}\n😕 You must divorce first:\n\n{marriage}\n\n💔 Use: <code>!развод</code>\nReply to your spouse’s message 💞",
+    "target_married": "{user}, {target} is already married.\n\n{marriage}",
+    "only_one_active": "{user}, only one wedding can run in a chat at a time.",
+    "already_created": "{user}, you’ve already started a wedding. Try finding it above in the chat."
+  },
+  "cancel_wedding": {
+    "not_allowed": "🚫 {name}, only the groom or bride can cancel the wedding.",
+    "canceled": "{user}, the wedding was canceled ❌."
+  },
+  "sign": {
+    "only_husband_wife": "🚫 {name}, only the groom and bride can sign.",
+    "need_roles": "⚠️ {name}, to sign, the groom, bride, registrar, best man, and maid of honor must all be present.",
+    "already_signed": "🎉 {name}, you’ve already signed the document.",
+    "signed": "✅ {name}, you’ve signed the document.{both_signed_hint}",
+    "both_signed_hint": "\nBoth signatures are present. You may start the wedding 🤵🏻👰🏻‍♀️."
+  },
+  "marriage_confirm": {
+    "not_allowed": "🚫{name}, only the groom, bride, or registrar can confirm the marriage.",
+    "need_signs": "⚠️ {name}, both the groom and bride must have signed to proceed.",
+    "final_congrats": "{husband} and {wife} are now married!\nCongratulations! May your future be as reliable as a bug-free algorithm ✨."
+  },
+  "divorce": {
+    "need_reply_spouse": "{user}, love is more than a word—it’s a union of two hearts. The \"!развод\" command must be a reply to your spouse’s message ❤️",
+    "no_self": "{user}, you can’t divorce yourself—even if you’re a master of solitude! Try again with your spouse 💔",
+    "not_in_marriage": "{user}, you’re as free as the wind! You’re not married, so no divorce is needed. 💫",
+    "not_with_this_person": "{user}, you’re not married to this person. ❌",
+    "confirm_prompt": "<b>{spouse}</b>, do you agree to divorce <b>{user}</b>? 💔\n\nIf yes, press the button below to continue. ⚖️",
+    "yes_forbidden": "🚫 You can’t confirm the divorce.",
+    "no_forbidden": "🚫 You can’t cancel the divorce.",
+    "divorced": "{user} and {spouse} divorced after {duration} together 💔",
+    "refused": "{user} chose not to divorce {spouse} ❤️‍🩹"
+  },
+  "chat_lang_title": "🌐 Choose the language for this chat:",
+  "chat_lang_saved": "✅ Chat language updated.",
+  "chat_lang_toast": "Saved",
+  "btn_back": "◀️ Back",
+  "btn_chat_languages": "🌐 Languages",
+  "stops": {
+    "header": "⛔️ Muted by you:",
+    "empty": "    ❌ Nobody"
+  },
+  "weekdays": {
+    "mon": "Monday",
+    "tue": "Tuesday",
+    "wed": "Wednesday",
+    "thu": "Thursday",
+    "fri": "Friday",
+    "sat": "Saturday",
+    "sun": "Sunday"
+  },
+  "banana": {
+    "time_left": "{hours} hr {minutes} min {seconds} sec",
+    "cooldown": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\nYour banana: <b>{current_banana_size} cm 🍌</b>\nYou can increase it 📏\nIn: <b>{time_str}</b> {emoji}⏳\n\n🔝 To see your rank, send: <code>Top banana</code>",
+    "grow_caption": "🍌 <b>Banana of {title} <a href=\"tg://user?id={user_id}\">{user_name}</a> grew by {cm} cm.</b>\nNow the banana of {title} <a href=\"tg://user?id={user_id}\">{user_name}</a> is <b>{new_size} cm</b>. 📏\n"
+  },
+  "catalog": {
+    "new_gif_title": "<b>🥳 A new GIF was added to the catalog!</b>",
+    "command_line": "🎭 <b>Command:</b>\\n<code>+rp {cmd} {gif_id}</code>",
+    "gif_id_line": "🖼️ <b>GIF ID:</b> <code>{gif_id}</code>",
+    "hint_line": "💬 <b>To add a command, tap this text, paste it into your chat and send</b>"
+  },
+  "buttons": {
+    "languages": "🌐 Languages"
+  },
+  "offers": {
+    "no_offers": "❌ No available offers.",
+    "available_offers": "📦 Available offers:\n{text}",
+    "offer_not_found": "❌ Error: offer not found.",
+    "purchase_not_allowed": "🚫 You are not allowed to make purchases.",
+    "insufficient_funds": "❌ You don’t have enough starcoins for this purchase.",
+    "purchase_success_payment": "✅ Payment successful!\nYour balance has been credited with {starcoins} starcoins 🎉",
+    "owner_only": "🚫 Only the owner can add offers.",
+    "enter_price_stars": "Enter the offer price in <b>Stars</b> ⭐️ (number):",
+    "enter_price_starcoins": "Enter the offer price in <b>starcoins</b> 🪐 (number):",
+    "enter_number": "❌ Enter a number!",
+    "enter_starcoins": "How many <b>starcoins</b> 🪐 will be in the offer? (number)",
+    "enter_coins": "How many <b>coins</b> 🪙 will be in the offer? (number)",
+    "enter_discount": "Enter discount <b>%</b> (0 if none):",
+    "offer_created_starcoins": "✅ New offer created!\nID: {_id}\nPrice: {price}\nStarcoins: {starcoins}\nDiscount: {discount}%",
+    "offer_created_coins": "✅ New offer created!\nID: {_id}\nPrice (in starcoins): {price}\nCoins: {coins}\nDiscount: {discount}%",
+    "offer_create_error": "❌ Error creating offer.",
+    "no_rights_delete": "🚫 You don’t have rights to delete offers.",
+    "offer_deleted": "✅ Offer successfully deleted.",
+    "invoice_title": "✨ Purchase Starcoins ✨",
+    "invoice_description": "You receive {starcoins} starcoins 🪐",
+    "invoice_label": "starcoins ({starcoins})"
+  },
+  "donate": {
+    "desc_donate": "<b><i>💫 Get Starcoins and unlock new features! 💫</i></b>\n\nStarcoins are the bot's internal currency. Use them to buy VIP, customize your profile, and enjoy extra perks 🚀"
+  }
+}

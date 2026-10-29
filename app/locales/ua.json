@@ -1,0 +1,1276 @@
+{
+  "roles": {
+    "role_names": {
+      "husband": "наречений",
+      "wife": "наречена",
+      "registrar": "реєстратор",
+      "witness_man": "дружба",
+      "witness_woman": "дружка",
+      "guest": "гості"
+    },
+    "cant_change_role": "🎉 {name}, ви — {role} і не можете змінити роль.",
+    "not_wife": "🚫 {name}, ви не наречена.",
+    "already_wife": "🎉 {name}, ви вже наречена.",
+    "became_wife": "✅ {name}, ви стали нареченою!",
+    "already_husband": "🎉 {name}, ви вже наречений.",
+    "not_husband": "🚫 {name}, ви не наречений.",
+    "already_joined": "🎉 {name}, ви вже долучилися до весілля.",
+    "joined": "✅ {name}, ви долучилися до весілля!",
+    "seat_taken": "🔒 {name}, місце зайнято — спробуйте іншу роль.",
+    "already_other_role": "⚠️ У вас уже є інша роль!",
+    "wait_for_bride": "⚠️ Зачекайте, поки наречена долучиться до весілля."
+  },
+  "allowed_links": {
+    "no_permission": "🚫 {mention}, у вас немає прав на використання команди \"{cmd}\".",
+    "added": "{mention}, дозволене посилання \"{link}\" додано.",
+    "already_exists": "{mention}, дозволене посилання \"{link}\" вже існує.",
+    "removed": "{mention}, дозволене посилання \"{link}\" видалено.",
+    "not_found": "{mention}, дозволеного посилання \"{link}\" немає.",
+    "add_usage": "<b>{role}</b>: {mention}\n❗Бракує аргументів!\nПриклад:\n<code>+ссылка t.me/http/https://...</code>",
+    "remove_usage": "<b>{role}</b>: {mention}\n❗Бракує аргументів!\nПриклад:\n<code>-ссылка t.me/http/https://...</code>"
+  },
+  "rp_local": {
+    "no_permission": "{mention}, у вас немає прав на використання команди \"{cmd}\".",
+    "gif_not_found": "{mention}, GIF з ID <code>{gif_id}</code> не знайдено у каталозі.\nКаталог GIF: <a href=\"{catalog_link}\">відкрити</a>\n\n<code>+рп {cmd} {text} [GIF ID]</code>",
+    "created": "✅ Команду <code>{cmd}</code> додано. {gif_part}",
+    "already_exists": "Команда <code>{cmd}</code> вже існує.",
+    "ask_cmd": "<b>Як назвати команду?</b>\n\n• Одне слово без пробілів.\n• Можна з «!» або без — збережу як <code>!команда</code>.\nПриклад: <code>!взяти</code>\n\n<i>Напишіть «отмена» щоб скасувати.</i>",
+    "cancelled": "Скасовано.",
+    "cmd_one_word": "Команда має бути одним словом без пробілів. Приклад: <code>!взяти</code> або <code>взяти</code>",
+    "cmd_exists_choose_other": "Команда <code>{cmd}</code> вже існує. Оберіть іншу, наприклад: <code>{cmd2}</code>",
+    "ask_text": "<b>Який текст показати користувачеві?</b>\n\n• Обов'язкові підказка:\n  <code>name1</code> — відправник\n  <code>name2</code> — отримувач\n• Емодзі можна де завгодно.\n• Завершуйте «!» або «?». Якщо забудете — додам «.»\n\n<b>Приклади:</b>\n<code>name1 обійняв(ла) name2 🤗!</code>\n<code>name1 💫\nвзяв(ла) на руки\nname2 🤍?</code>\n\n<i>Напишіть «отмена» щоб скасувати.</i>",
+    "text_require_placeholders": "<b>У тексті мають бути підказка:</b>\n• <code>name1</code> — відправник\n• <code>name2</code> — отримувач\nЕмодзі дозволені. В кінці — «!» або «?» (інакше додам «.»).\n\n<b>Приклади:</b>\n<code>name1 обійняв(ла) name2 🤗!</code>\n<code>name1\nобійняв(ла)\nname2 🤍?</code>",
+    "ask_gif": "Яку гіфку використовувати?\nНадішліть <b>ID</b> з каталогу гіфок (число) або напишіть <code>нет</code>, щоб без гіфки.\n\nКаталог: <a href=\"{catalog_link}\">відкрити</a>",
+    "gif_need_number": "Потрібно число (ID гіфки з каталогу) або напишіть <code>нет</code>.\nКаталог GIF: <a href=\"{catalog_link}\">відкрити</a>",
+    "gif_not_found_retry": "GIF з ID <code>{gif_id}</code> не знайдено.\nВізьміть ID у <a href=\"{catalog_link}\">Каталозі</a> і надішліть ще раз, або напишіть <code>нет</code> щоб додати без гіфки.",
+    "deleted": "{mention}, команду \"{cmd}\" видалено.",
+    "delete_not_found": "{mention}, команди \"{cmd}\" немає.",
+    "delete_usage": "{mention}, щоб видалити RP‑команду, напишіть її після -рп:\n-рп !помяукать"
+  },
+  "settings": {
+    "settings_only_admins": "🚫 Цей розділ доступний тільки адміністраторам.",
+    "settings_main_text": "Кнопки зліва — інфо функції ⚙️\nКнопки справа — увімк/вимк ☑️",
+    "systemmsg_info": "Інфо: системні повідомлення",
+    "systemmsg_switch": "🔧 Системні - функція {state}.",
+    "antiarab_info": "Інфо: блокування арабських ніків",
+    "antiarab_switch": "👳🏾‍♂️ Арабські - функція {state}.",
+    "antibot_info": "Інфо: блокування ботів",
+    "antibot_switch": "🤖 Боти - функція {state}.",
+    "antichannel_info": "Інфо: блокування каналів",
+    "antichannel_switch": "👤 Канали - функція {state}.",
+    "antiforward_info": "Інфо: блокування пересилань",
+    "antiforward_switch": "📢 Пересилання - функція {state}.",
+    "antilink_info": "Інфо: блокування посилань",
+    "antilink_switch": "🔗 Посилання - функція {state}.",
+    "antihyper_info": "Інфо: блокування гіперпосилань",
+    "antihyper_switch": "🔍 Гіперпосилання - функція {state}.",
+    "antibutton_info": "Інфо: блокування кнопок",
+    "antibutton_switch": "🖲️ Кнопки - функція {state}.",
+    "antiuser_info": "Інфо: блокування згадувань @",
+    "antiuser_switch": "🌀 @Юзери - функція {state}.",
+    "antispam_info": "Інфо: антиспам",
+    "antispam_switch": "🛡️ Антиспам - функція {state}.",
+    "shalosti_info": "Інфо: розділ жарти",
+    "shalosti_page": "😈 Розділ «Жарти / 🎮 Ігри»\n\nКнопки зліва — інфо функції ⚙️\nКнопки справа — увімк/вимк ☑️",
+    "nsfw_info": "🔞 Увімкнути відповіді RP 18+ (включаючи через reply).",
+    "nsfw_switch": "🔞 RP 18+ - функція {state}.",
+    "wedding_info": "Інфо: весілля",
+    "wedding_switch": "💍 Весілля - функція {state}.",
+    "roulette_info": "Інфо: рулетка",
+    "roulette_switch": "🎰 Рулетка - функція {state}.",
+    "state_on": "увімкнена ✅.",
+    "state_off": "вимкнена 📴.",
+    "admin_only": "🚫 Цей розділ доступний тільки адміністраторам.",
+    "main_text": "Кнопки зліва — інфо функції ⚙️\nКнопки справа — увімк/вимк ☑️",
+    "shalosti_page_text": "😈 Розділ «Жарти / 🎮 Ігри»\n\nКнопки зліва — інфо функції ⚙️\nКнопки справа — увімк/вимк ☑️",
+    "state": {
+      "on": "увімкнена ✅.",
+      "off": "вимкнена 📴."
+    },
+    "toggled": "{name} - функція {state}",
+    "names": {
+      "systemmsg": "🔧 Системні",
+      "antiarab": "👳🏾‍♂️ Арабський",
+      "antibot": "🤖 Боти",
+      "antichannel": "👤 Канали",
+      "antiforward": "📢 Пересилання",
+      "antilink": "🔗 Посилання",
+      "antihyper": "🔍 Гіперпосилання",
+      "antibutton": "🖲️ Кнопки",
+      "antiuser": "🌀 @Юзери",
+      "antispam": "🛡️ Антиспам",
+      "nsfw": "🔞 RP 18+",
+      "wedding": "💍 Весілля",
+      "roulette": "🎰 Рулетка",
+      "shalosti": "😈 Жарти / 🎮 Ігри"
+    },
+    "info": {
+      "systemmsg": "Інфо: системні повідомлення",
+      "antiarab": "Інфо: блокування арабських ніків",
+      "antibot": "Інфо: блокування ботів",
+      "antichannel": "Інфо: блокування каналів",
+      "antiforward": "Інфо: блокування пересилань",
+      "antilink": "Інфо: блокування посилань",
+      "antihyper": "Інфо: блокування гіперпосилань",
+      "antibutton": "Інфо: блокування кнопок",
+      "antiuser": "Інфо: блокування згадувань @",
+      "antispam": "Інфо: антиспам",
+      "shalosti": "Інфо: розділ жарти",
+      "nsfw": "🔞 Увімкнути відповіді RP 18+ (включаючи через reply).",
+      "wedding": "Інфо: весілля",
+      "roulette": "Інфо: рулетка"
+    },
+    "choose_chat_language": "🌐 Оберіть мову для цього чату:",
+    "lang_applied": "✅ Мову чату оновлено."
+  },
+  "moderation": {
+    "no_permission": "🚫 {mention}, у вас немає права на використання команди \"{cmd}\".",
+    "need_reply": "<b>{role}</b>: {mention}\n🙌🏼 Команда <code>{cmd}</code> має бути відповіддю на повідомлення учасника цієї групи\n{reason}",
+    "ban_self": "<b>{role}</b>: {mention}\n🔒 Не можна забанити самого себе.",
+    "ban_bot": "<b>{role}</b>: {mention}\n🔒 Не можна забанити бота.",
+    "ban_admin": "<b>{role}</b>: {mention}\n🔒 Не можна забанити адміністратора.",
+    "already_banned": "🚫 {target} вже забанений.",
+    "banned": "🤐 <b>Забанив(ла)</b>: {target} [<code>{id}</code>]",
+    "already_kicked": "🚫 {target} вже виключений.",
+    "kicked": "👟 Виключив з групи: {target} [<code>{id}</code>]",
+    "mute_self": "<b>{role}</b>: {mention}\n🔒 Не можна замутити самого себе.",
+    "mute_bot": "<b>{role}</b>: {mention}\n🔒 Не можна замутити бота.",
+    "mute_admin": "⚠️ {target} є адміном, йому не можна дати мут.",
+    "mute_no_args": "<b>{role}</b>: {mention}\n❗Не вистачає аргументів!\nПриклад: <code>!мут 10хв/2год/1д</code>",
+    "muted": "🤐 <b>Видав(ла) мут</b>: {target} [<code>{id}</code>]\n🤫 Замучений: <code>{duration}</code>\n⏰ До: <code>{until}</code>",
+    "remute_done": "🙂 <b>Зняв(ла) обмеження з</b>: {target} [<code>{id}</code>]",
+    "remute_none": "⚠️ У користувача {target} немає мута."
+  },
+  "active_kick": {
+    "access_denied": "🚫 Доступ заборонено",
+    "menu_title": "🚀 Кік актив:",
+    "ask_count": "Надішліть у чат кількість користувачів, яких хочете вилучити 👇",
+    "invalid_format": "❌ Невірний формат",
+    "kicked_success": "✅ Успішно було вилучено {success} користувачів.",
+    "kicked_success_of_count": "✅ Успішно було вилучено {success} користувачів. (з {count})",
+    "kicked_success_of_limit": "✅ Успішно вилучено {success} користувачів (з {limit} запитаних)",
+    "choose_period": "📆 За який період активності виключити користувачів?",
+    "no_users_kicked": "ℹ️ Нікого з користувачів виключити не вдалося."
+  },
+  "inactive_kick": {
+    "access_denied": "🚫 Доступ заборонено",
+    "menu_title": "💤 Кік неактив:",
+    "ask_count": "Надішліть у чат кількість користувачів, яких хочете вилучити 👇",
+    "choose_period": "📆 Оберіть за який період днів виконати кік неактивних:",
+    "enter_integer": "⚠️ Введіть ціле число",
+    "max_count_hint": "⚠️ Ви можете вилучити до <b>{count_of_users}</b> учасників.",
+    "confirm_count": "👟 Вилучити <b>{count}</b> найменш активних користувачів з групи?",
+    "invalid_format": "❌ Невірний формат",
+    "kicked_success": "✅ Успішно було вилучено {success} користувачів.",
+    "kicked_success_of_count": "✅ Успішно було вилучено {success} користувачів. (з {count})",
+    "kicked_success_of_limit": "✅ Успішно вилучено {success} користувачів (з {limit} запитаних)"
+  },
+  "nubs_kick": {
+    "access_denied": "🚫 Доступ заборонено",
+    "choose_period": "📆 Виберіть за який період днів зробити кік новачків:",
+    "done": "✅ Успішно вилучено {success} користувачів з активністю за останні {days} днів та без активності."
+  },
+  "silence_kick": {
+    "access_denied": "🚫 Доступ заборонено",
+    "choose_period": "📆 Виберіть за який період днів зробити кік мовчунів:",
+    "done": "✅ Успішно вилучено {success} користувачів з неактивністю більше {days} днів та без активності."
+  },
+  "kick_menu": {
+    "access_denied": "🚫 Доступ заборонено",
+    "title": "👟 Кік:"
+  },
+  "chat_management": {
+    "access_denied": "🚫 Доступ заборонено",
+    "header_user": "<a href=\"tg://user?id={user_id}\">{user}</a>",
+    "chat_info_title": "📁 Інформація про чат:",
+    "chat_id": "🆔 ID чату: <code>{chat_id}</code>",
+    "users_count": "🚹 Користувачів: <b>{count}</b>",
+    "messages_count": "💬 Повідомлень у чаті: <b>{count}</b>",
+    "admins": "🛂 Адміни:",
+    "admin_item": "<a href=\"tg://user?id={admin_id}\">{admin_name}</a> <code>[{admin_id}</code>]",
+    "menu_title": "🕹 Меню керування чатом:",
+    "no_rights": "<a href=\"tg://user?id={user_id}\">{user}</a>, у вас немає прав на використання цієї команди.",
+    "reply_required_add": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ Використовуйте команду у форматі: +адмін (Reply на користувача)",
+    "reply_required_remove": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ Використовуйте команду у форматі: -адмін (Reply на користувача)",
+    "cant_target_bot": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ Не можна застосовувати команду до бота.",
+    "cant_target_owner": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ Не можна змінювати права власника чату.",
+    "already_admin": "<a href=\"tg://user?id={user_id}\">{user}</a>, ℹ️ Цей користувач уже адміністратор.",
+    "not_admin": "<a href=\"tg://user?id={user_id}\">{user}</a>, ℹ️ Цей користувач не є адміністратором.",
+    "no_rights_promote": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ У мене немає прав призначати адміністраторів.",
+    "no_rights_demote": "<a href=\"tg://user?id={user_id}\">{user}</a>, ⚠️ У мене немає прав знімати адміністраторів.",
+    "promoted": "<a href=\"tg://user?id={user_id}\">{user}</a> отримав(ла) адмінку в чаті <b>{chat}</b>.",
+    "demoted": "<a href=\"tg://user?id={user_id}\">{user}</a> позбавлений(а) адмінки в чаті <b>{chat}</b>.",
+    "owner_only": "🚫 Натискати може лише власник."
+  },
+  "events": {
+    "menu_title": "🔍 Канал Подій",
+    "menu_description": "Тут ви можете налаштувати канал, у якому зберігатимуться всі події цієї групи.\\nЩоб додати канал, ви повинні бути його власником, а @iSpaceRobot має бути Адміном цього каналу. Якщо ці умови виконані, натисніть кнопку нижче.\\n<i>Канал може бути як публічним, так і приватним.</i>",
+    "current_log_chat": "Поточний лог-чат:",
+    "not_found": "Не знайдено.",
+    "add_chat_first": "⚠️ Додайте чат для відправки логів перед тим, як змінювати налаштування.",
+    "logging_state": "Логування {event} - {state}",
+    "logging_enabled": "увімкнено ✅",
+    "logging_disabled": "вимкнено 📴",
+    "introductions_info": "➕ Запис користувачів, які приєднуються до групи.",
+    "exits_info": "🚪 Запис користувачів, які виходять із групи.",
+    "punishments_info": "⚖️ Запис автоматично застосованих покарань (антиспам, антифлуд, заборонені слова тощо).",
+    "arab_info": "👳🏾‍♂️ Запис покарань за використання арабських символів.",
+    "bot_added_info": "🤖 Запис дій, пов’язаних із додаванням ботів у групу.",
+    "ban_mute_info": "🔒 Запис блокувань і їх зняття, заглушення та видалення з групи адміністраторами/модераторами.",
+    "admin_info": "🛡️ Запис викликів адміністрації командою @admin.",
+    "settings_info": "⚙️ Запис змін налаштувань.",
+    "role_info": "🎭 Запис призначення та зняття ролей.",
+    "change_log_group_denied": "🚫 Ця кнопка вам недоступна.",
+    "current_chat_info": "Поточний лог-чат:",
+    "send_chat_id": "Надішліть ID чату, у який будуть відправлятися логи.\\nЩоб отримати ID чату, використайте в ньому команду <code>/id</code>.",
+    "chat_set_success": "✅ Чат {title} було призначено для логів.\\n\\nТепер ви можете налаштувати, які саме логи потрібні, у розділі \"🎛 Що записувати в канал?\"",
+    "chat_not_found": "⚠️ Чат з ID: <code>{chat_id}</code> не знайдено. Якщо бота немає в цьому чаті, його потрібно додати.",
+    "chat_deleted": "🗑️ Ви успішно видалили чат для логів. Щоб логи знову відправлялись, призначте чат.",
+    "added": {
+      "blacklisted_chat": "Привіт! Цей чат у чорному списку. Бувай!",
+      "hello": "Привіт! {help_text}"
+    },
+    "granted_admin": "Дякую за адмінку! Тепер я можу працювати на повну. 🚀",
+    "rights": {
+      "delete_messages": "🗑 Видалення повідомлень",
+      "restrict_members": "🚫 Блокування користувачів",
+      "invite_users": "🔗 Запрошення користувачів",
+      "pin_messages": "📌 Закріплення повідомлень",
+      "change_info": "⚙️ Зміна інформації про групу",
+      "manage_chat": "📋 Керування чатом",
+      "is_anonymous": "👻 Анонімність",
+      "promote_members": "📢 Призначення адміністраторів",
+      "manage_video_chats": "🎥 Керування відеочатами",
+      "post_messages": "✉️ Публікація повідомлень",
+      "edit_messages": "✏️ Редагування повідомлень",
+      "manage_topics": "🏷 Керування темами"
+    },
+    "role_change": {
+      "added_title": "➕ #РОЛЬ_ДОДАНО #ADMIN 👮🏻‍♂️",
+      "removed_title": "➖ #РОЛЬ_ВИДАЛЕНО #ADMIN 👮🏻‍♂️",
+      "rights_title": "🛡 <b>Права адміністратора:</b>",
+      "group_line": "<b>• Група:</b> <a href='{link}'>{title}</a> [<code>{group_id}</code>]",
+      "initiator_line": "<b>• Ініціатор:</b> {initiator} [<code>{initiator_id}</code>]",
+      "who_line": "<b>• Хто:</b> {who} [<code>{who_id}</code>]"
+    },
+    "join": {
+      "antiarab": {
+        "name": "<b>Забанено</b> {who} за <b>арабські літери</b> в імені 👳🏾‍♂️\n\n<a href='{catalog_link}'>Каталог Space ✨</a>",
+        "bio": "<b>Забанено</b> {who} за <b>арабські літери</b> в біо 👳🏾‍♂️\n\n<a href='{catalog_link}'>Каталог Space ✨</a>"
+      },
+      "banlist_caption": "🌌 Важливе повідомлення від Space! 🚀\n\n{who} заблоковано за порушення наших космічних правил. Ми підтримуємо безпечний і дружній простір.\n\nДякуємо за розуміння! 🌟",
+      "spamlist_caption": "🌌 Важливе повідомлення від Space! 🚀\n\n{who} заблоковано за рейди/спам. Ми підтримуємо безпечний і дружній простір.\n\nДякуємо за розуміння! 🌟",
+      "log_new_user": {
+        "title": "➕ #НОВИЙ_КОРИСТУВАЧ",
+        "who": "<b>• Хто:</b> {who} [<code>{who_id}</code>]",
+        "group": "<b>• Група:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]",
+        "by_link": "<b>• За посиланням:</b> {by} [<code>{by_id}</code>]"
+      },
+      "secret_chief": "Головне управління цифрового контролю — {chief}. Він контролює кожен біт, як Сталін контролював народ.",
+      "owner_texts": [
+        "⚔️ Легенда повертається! Увага всім: наш господар {name} знову з нами! Вклоніться його величності! 🤴",
+        "🌌 Вітер змін приніс у цей чат справжнього власника... Ласкаво просимо, {name}! Господар тут! 🔥",
+        "🔥 Негайно звільніть дорогу! Господар {name} тут! 🏆",
+        "⚡ Усі встали! Господар {name} зайшов у чат! 😎",
+        "💥 ВАЖЛИВО! Наш господар {name} увійшов у чат! 🏅",
+        "👑 Увага! Господар {name} прийшов! 🔥",
+        "🚀 Просто з орбіти до нас спустився {name} – наш господар знову тут! 🌠",
+        "⚡ Чат, приготуватися! {name} – господар на місці, порядок відновлено! 🛡",
+        "🔥 Господар {name} приземлився! Все йде за планом! 🚀",
+        "🌠 {name} повернувся! Без господаря тут було не те... 🚀",
+        "🎩 Усі погляди сюди! {name} – господар знову серед нас! ✨",
+        "⚡ Цей день особливий – {name}, господар, знову з нами! 😎"
+      ],
+      "agent_texts": [
+        "🛡️ Агент зірок {name} прибув на завдання! 🚀",
+        "💫 Просто з орбіти до нас спустився {name} – наш агент зірок тепер тут! 🌠",
+        "⚔️ Охоронець Галактики {name} увійшов у чат! Усі дотримуємось порядку! 🛸",
+        "🌟 Світло зірок осяяло чат! {name} – агент зірок, ласкаво просимо! ✨",
+        "🎩 Увага! Агент зірок {name} на місці! Системи стабільні! 🛰",
+        "🔥 Агент {name} приземлився! Місію розпочато! 🚀",
+        "🛰 Контакт встановлено! Агент зірок {name} приєднався до команди! 🌌",
+        "💥 Галактичний агент {name} увійшов у чат! Операція починається! 🛡️",
+        "🌠 Агент зірок {name} знову з нами! Підключаємось до міжзоряного каналу! 🚀",
+        "⚡ Чат, зустрічайте! {name} – елітний агент зірок, що підтримує космічний порядок! 🛸"
+      ]
+    },
+    "bot_log": {
+      "title": "➕ #НОВИЙ_БОТ",
+      "what": "<b>• Який:</b> {who} [<code>{who_id}</code>]",
+      "group": "<b>• Група:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]",
+      "by_link": "<b>• За посиланням:</b> {by} [<code>{by_id}</code>]"
+    },
+    "leave": {
+      "title": "➖ #КОРИСТУВАЧ_ВИЙШОВ",
+      "who": "<b>• Хто:</b> {who} [<code>{who_id}</code>]",
+      "group": "<b>• Група:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]",
+      "remover_kicked": "<b>• Видалив:</b> {remover} [<code>{remover_id}</code>]",
+      "remover_self": "<b>• Вийшов самостійно</b>"
+    },
+    "settings": {
+      "title": "➖ #ЗМІНА_НАЛАШТУВАНЬ",
+      "name_changed": "🔖 Назву групи змінено",
+      "photo_changed": "🖼 Фото групи змінено",
+      "who": "<b>• Хто:</b> {who} [<code>{who_id}</code>]",
+      "group_line": "<b>• Група:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]",
+      "changed_title_minus": "➖ #ЗМІНА_НАЛАШТУВАНЬ",
+      "photo_changed_line": "🖼 Було змінено фото групи",
+      "title_changed_line": "🔖 Було змінено назву групи",
+      "new_title_line": "<b>• Нова назва:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]"
+    },
+    "logs": {
+      "no_admin_for_check": "У бота немає прав адміністратора для перевірки нових користувачів.",
+      "failed_to_ban_user": "❌ Не вдалося забанити користувача: {error}",
+      "title_change_error": "Помилка під час обробки зміни назви групи: {error}",
+      "photo_change_error": "Помилка під час обробки зміни фото чату: {error}",
+      "pinned_message": "Закріплене повідомлення:",
+      "no_admin_for_moderation": "У бота немає прав адміністратора для модерації повідомлень."
+    },
+    "admin_tag": {
+      "title": "👮🏻‍♂️ #ВІДМІТИВ_АДМІНА",
+      "who_line": "<b>• Хто:</b> {who} [<code>{who_id}</code>]",
+      "group_line": "<b>• Група:</b> <a href='{link}'>{title}</a> [<code>{chat_id}</code>]",
+      "admin_line": "<b>• Адмін:</b> {admin} [<code>{admin_id}</code>]"
+    },
+    "common": {
+      "who_line": "<b>• Хто:</b> {who}",
+      "group_line": "<b>• Група:</b> {group}"
+    },
+    "antiarab": {
+      "log_message": "➕ #АРАБСЬКІ_СИМВОЛИ 👳🏾‍♂️\n{group}\n{bot} забанив {who} за використання арабських символів.\n#id{tagid}"
+    }
+  },
+  "migration": {
+    "access_denied": "🚫 Доступ заборонено",
+    "run_in_group": "{mention}, викличте команду \"!миграция\" у чаті, з якого будуть мігрувати повідомлення.",
+    "only_creator": "{mention}, команду \"!миграция\" може використовувати лише творець чату.",
+    "secret_message": "❗️Секретно❗️\nКлюч міграції:\n<code>{key}</code>\nМіграція з: <a href='{chat_link}'>{chat_title}</a>\n\n<b>Використайте в чаті, куди хочете, щоб мігрували повідомлення.</b>"
+  },
+  "night_mode": {
+    "on_caption": "🌒 Нічний режим активовано!\nВимкнеться о {time}\n\n✨ На добраніч!",
+    "off_caption": "☀️ Нічний режим вимкнено!\nУвімкнеться о {time}\n\n🌻 Доброго ранку!",
+    "schedule_title": "⏱️ Розклад нічного режиму",
+    "toggle_result": "{feature}: {state}",
+    "state_enabled": "увімкнено",
+    "state_disabled": "вимкнено",
+    "tutorial_change_time": "ℹ️ Як встановити час: оберіть «Початок» і «Кінець», змінюйте стрілками та натисніть «Підтвердити».",
+    "menu_title": "🌒 Нічний режим",
+    "status_enabled_block": "✅ Увімкнено\n  └ Активний з <b>{start_time}</b> до <b>{end_time}</b>\n\n⌚️ Поточний час: {now}\n🌍 Часовий пояс: {timezone}",
+    "status_disabled_block": "❌ Вимкнено",
+    "delete_media_info": "📸 Видаляє всі медіа, надіслані учасниками під час нічного режиму.",
+    "global_silence_info": "🌐 Видаляє всі повідомлення, надіслані учасниками під час нічного режиму.",
+    "silence_info": "🤫 Видаляє повідомлення учасників під час нічного режиму, окрім повідомлень адміністраторів.",
+    "notify_info": "🔔 Надсилає сповіщення на початку та в кінці нічного режиму."
+  },
+  "welcome_text": {
+    "access_denied": "🚫 Доступ заборонено",
+    "prompt_intro": "Введіть новий текст вітання нижче 👇\n\nВи можете використовувати такі вставки:",
+    "placeholders_block": "<i>name — ім’я відправника з посиланням на профіль\nid — Telegram ID відправника\nchat_id — ID чату\ntitle — назва чату\nchat — посилання на чат із назвою\nbot — ім’я бота з посиланням на профіль</i>",
+    "current_text_title": "Поточний текст:",
+    "current_text_code": "<code>{welcome_text}</code>",
+    "changed_by_owner": "<b>🤴🏻 Власник чату</b>: <a href=\"tg://user?id={owner_id}\">{owner_name}</a>\n👋 <b>Змінив(ла) привітання</b>"
+  },
+  "filters": {
+    "access_denied": "🚫 Доступ заборонено",
+    "deleted_system_msg": "⚙️ Системне повідомлення видалено",
+    "arabic_ban_msg": "<b>Забанив</b> {user} <b>за арабські символи</b> 👳🏾‍♂️",
+    "bot_ban_msg": "<b>Забанив бота</b> {user} 🤖",
+    "mute_for_bot_add": "Видано <b>мут</b> на 10 хвилин {user} <b>за додавання бота</b> 🕵🏻‍♂️",
+    "mute_forward": "Видано <b>мут</b> на 5 хвилин {user} <b>за пересилання</b> 📩",
+    "mute_link": "Видано <b>мут</b> на 5 хвилин {user} <b>за посилання</b> 🔗",
+    "mute_hyperlink": "Видано <b>мут</b> на 5 хвилин {user} <b>за гіперпосилання</b> 🔍",
+    "mute_button": "Видано <b>мут</b> на 5 хвилин {user} <b>за кнопку</b> 🖲️",
+    "mute_user_mention": "Видано <b>мут</b> на 10 хвилин {user} <b>за згадку @юзера</b> 🌀"
+  },
+  "ban": {
+    "banlist_msg": "🌌 Важливе повідомлення від Space! 🚀\n\n{user} був забанений за порушення правил."
+  },
+  "roulette": {
+    "text": "🎰 <b>Міні-рулетка</b> 🎰\n\nВгадайте число з:\n  0🟢\n  1🔴 2⚫ 3🔴 4⚫ 5🔴 6⚫\n  7🔴 8⚫ 9🔴 10⚫ 11🔴 12⚫\n\nСтавки текстом:\n  1000 к | 3000 1-6 | 5000 12\n\n🪑 Зайнято столів: 1/10\n\n🃏 Стіл 1:\n      Вільно\n\n🃏 Стіл 2:\n      Вільно     \n\n🃏 Стіл 3:\n      Вільно\n\n🃏 Стіл 4:\n      Вільно\n\n🃏 Стіл 5:\n      Вільно\n\n🃏 Стіл 6:\n      Вільно\n\n🃏 Стіл 7:\n      Вільно\n\n🃏 Стіл 8:\n      Вільно\n\n🃏 Стіл 9:\n      Вільно\n\n🃏 Стіл 10:\n      Вільно",
+    "inactivity_warning": "Без активності стіл звільниться через 60 с",
+    "buttons": {
+      "open_mischief": "Відкрити Пустощі / Ігри"
+    },
+    "off_text": "🎰 Рулетка зараз вимкнена.\nАдмінам: ⚙️ Налаштування → 😈 Пустощі / 🎮 Ігри → 🎰 Рулетка — увімкніть ✅.",
+    "off_alert": "🎰 Рулетка вимкнена. Відкрийте Пустощі / Ігри, щоб увімкнути.",
+    "blacklist": "Ви у чорному списку. Я з вами не розмовляю!",
+    "open_hint": "ℹ️ Ви можете відкрити рулетку, натиснувши на повідомлення, на яке надіслана ця відповідь.",
+    "tables": {
+      "prefix": "🃏 Стіл",
+      "free_label": "Вільно"
+    },
+    "headers": {
+      "bets_section": "🎲 Ставки {username}:"
+    },
+    "all_tables_busy": "⚠️ Усі столи зайняті, спробуйте пізніше.",
+    "bet": {
+      "prep": "на",
+      "words": {
+        "black": [
+          "ч",
+          "чорний",
+          "чорне",
+          "⚫",
+          "⚫️"
+        ],
+        "red": [
+          "к",
+          "червоний",
+          "червоне",
+          "🔴"
+        ],
+        "green": [
+          "з",
+          "зелений",
+          "зелене",
+          "🟢"
+        ],
+        "even": [
+          "парне"
+        ],
+        "odd": [
+          "непарне"
+        ],
+        "low": [
+          "1-6"
+        ],
+        "high": [
+          "7-12"
+        ]
+      }
+    },
+    "max_bets_reached": "⚠️ Ви зробили максимальну кількість ставок.",
+    "bet_make_alert": "Зробіть ставку.",
+    "bets_not_recognized": "⚠️ Ставки не розпізнано.",
+    "insufficient_funds": "⚠️ Недостатньо монет. Поставте менше.",
+    "cooldown": {
+      "spin": "{name}, ви зможете крутити через <b>{time}</b> {emoji}.",
+      "bag": "{name}, ви зможете отримати мішок через <b>{time}</b> {emoji}."
+    },
+    "spin": {
+      "caption": "👤 Гравець: {name}\n🎰 Рулетка крутиться... (10 секунд)"
+    },
+    "win": {
+      "header": "👤 Гравець: {name}\n",
+      "cell": "🎯 Випало число: <b>{cell}</b>\n",
+      "bets_header": "🔻 Ставки:\n",
+      "entry": {
+        "match_number": "✅ {amount} на {target} — виграш x5\n",
+        "match_range": "✅ {amount} на {target} — виграш x2\n",
+        "match_red": "✅ {amount} на 🔴 — виграш x2\n",
+        "match_black": "✅ {amount} на ⚫ — виграш x2\n",
+        "match_green": "✅ {amount} на 🟢 — виграш x10\n"
+      },
+      "entry_lose": "❌ {amount} на {target} — програш\n",
+      "balance": "\n💰 Баланс: <b>{old}</b> -> <b>{new}</b> 🪙"
+    },
+    "log": {
+      "entry": "🕒 {time} • 🎯 <b>{cell}</b>\n\n👤 <b>{user}</b>\n🎲 {bets_count} ставок\n💰 {old} → {new} 🪙"
+    },
+    "cancelled_message": "❌ {name}, рулетку скасовано.",
+    "cancel_not_owner": "🚫 Ви не можете скасувати.",
+    "cancel_ok": "🛑 Рулетку скасовано.",
+    "history_empty": "Історія порожня.",
+    "history_header": "<b>🧾 Останні 10 круток:</b>\n\n",
+    "already_spinning": "⚠️ Рулетка вже крутиться.",
+    "no_bets_to_double": "⚠️ У вас немає ставок для подвоєння.",
+    "cannot_press_button": "🚫 Ви не можете натискати цю кнопку.",
+    "bag": {
+      "caption": "💰 {name}, ви отримали {coins} монет.\n🪙 Баланс: {balance}"
+    },
+    "min_bet": "⚠️ {name} не можна ставити менше {min} монет.",
+    "not_enough_coins": "⚠️ {user} Недостатньо монет. Доступно: {available}",
+    "not_enough_coins_double": "⚠️ {user} Недостатньо монет для подвоєння. Потрібно: {need}, доступно: {available}",
+    "not_enough_coins_mention": "⚠️ <a href=\"tg://user?id={user_id}\">{user}</a> Недостатньо монет. Доступно: {available}"
+  },
+  "subscribe": {
+    "must_subscribe_pm_denied": "🚫 Щоб користуватися ботом, підпишіться на канал:"
+  },
+  "start": {
+    "blacklist_block": "Ви у чорному списку. Я з вами не спілкуюся!",
+    "start_greet": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{START_TEXT}"
+  },
+  "help": {
+    "blacklist_block": "Ви у чорному списку. Я з вами не спілкуюся!",
+    "help_private": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{HELP_TEXT}",
+    "help_group": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{HELP_TEXT}",
+    "back_to_help": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,\nДля роботи мені потрібні права адміністратора:\n    ✅ Видалення повідомлень\n    ✅ Запрошувальні посилання\n\nЯкщо ви користуєтесь функціями модерації, надайте право:\n    ⚠️ Обмежувати учасників\n\nЗа замовчуванням всі функції у групах вимкнені 📴\nЩоб увімкнути, надішліть у своїй групі: !космос\nПотім натисніть кнопку \"⚙️\"",
+    "admins_cmds": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{ADMINS_CMDS}",
+    "moder_cmds": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{MODER_CMDS}",
+    "statics_cmds": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{STATICS_CMDS}",
+    "shalun_cmds": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>,{SHALUN_TEXT}"
+  },
+  "id": {
+    "header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>",
+    "chat_id": "ID чату: <code>{chat_id}</code>",
+    "topic_id": "ID теми: <code>{thread_id}</code>",
+    "chat": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\nID чату: <code>{chat_id}</code>\n{topic_line}",
+    "topic_line": "ID теми: <code>{thread_id}</code>"
+  },
+  "cosmos": {
+    "title": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n<tg-emoji emoji-id=\"5231200819986047254\">🔥</tg-emoji> Статистика:",
+    "ping": "    📡 Пінг: {ping} мс",
+    "req_count": "    <tg-emoji emoji-id=\"5264727218734524899\">❓</tg-emoji> Запитів: {req_count}",
+    "rp_global": "    <tg-emoji emoji-id=\"5397753673130463064\">❓</tg-emoji> Глоб. RP команд: {count}",
+    "rp_local": "    <tg-emoji emoji-id=\"5469645992531862101\">❓</tg-emoji> Локальних RP команд: {count}",
+    "weddings": "    <tg-emoji emoji-id=\"5282774082901793863\">❓</tg-emoji> Поточних шлюбів: {count}",
+    "marriages": "    💑 Глобальних шлюбів: {count}",
+    "with_banana_and_coin": "  <tg-emoji emoji-id=\"5224257782013769471\">❓</tg-emoji>  З бананом і монетою: {count}",
+    "chats": "    <tg-emoji emoji-id=\"5213307977640979750\">❓</tg-emoji> Чатів: {count}",
+    "users_total": "    🙎 Користувачів: {count}",
+    "users_active": "        🏃 Активних користувачів: {count}",
+    "users_private": "    <tg-emoji emoji-id=\"5373012449597335010\">❓</tg-emoji> Користувачів у ЛС бота: {count}"
+  },
+  "profile": {
+    "unknown_date": "Невідомо",
+    "not_found": "⚠️ Користувача не знайдено в базі.",
+    "header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n🪪 Профіль:",
+    "in_system": "    🪐 У <a href=\"tg://user?id={bot_id}\">{bot_name}</a> з <b>{created_at}</b>",
+    "name": "    👤 Імʼя: {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>",
+    "username": "    🌀 Юзер: @{username}",
+    "username_none": "    🌀 Юзер: @Не вказано",
+    "id": "    🆔 ID: <code>{user_id}</code>",
+    "banana": "    🍌 Банан: {banana} см",
+    "coins": "    🪙 Монет: {coins}",
+    "starcoins": "    🪐 Астронів: {starcoins}",
+    "not_married": "    🦅 Не одружений/не заміжня",
+    "spouse": {
+      "wife": "Дружина",
+      "husband": "Чоловік"
+    },
+    "married_title": "  💍 {who}: <a href=\"tg://user?id={spouse_id}\">{spouse_name}</a>",
+    "married_id": "         [<code>{spouse_id}</code>]",
+    "married_time": "  {time} ⌚️ {date}/📆 {weekday}",
+    "married_diff": "  ⏳ {diff}",
+    "roles": {
+      "owner": "    👑 Господар",
+      "engineer": "    👨🏻‍💻 Інженер зірок",
+      "agent": "    🧑🏻‍🚀 Агент зірок",
+      "chat_owner": "    🏛 Власник групи",
+      "chat_admin": "    🎖 Адміністратор групи"
+    },
+    "admin_rights_title": "🛡 <b>Права адміністратора:</b>",
+    "admin_rights": {
+      "delete_messages": "🗑 Видалення повідомлень",
+      "restrict_members": "🚫 Обмеження учасників",
+      "invite_users": "🔗 Запрошення користувачів",
+      "pin_messages": "📌 Закріплення повідомлень",
+      "change_info": "⚙️ Зміна інформації про групу",
+      "manage_chat": "📋 Керування чатом",
+      "is_anonymous": "👻 Анонімність",
+      "promote_members": "📢 Призначення адмінів",
+      "manage_video_chats": "🎥 Керування відеочатами",
+      "post_messages": "✉️ Публікація повідомлень",
+      "edit_messages": "✏️ Редагування повідомлень",
+      "manage_topics": "🏷 Керування темами"
+    },
+    "vip_status": "<b>👑 VIP користувач</b>",
+    "blacklist_title": "🚫 <b>Користувач у чорному списку</b>",
+    "blacklist_time": "    ⏰ <b>{time}</b>",
+    "spamlist_title": "🚫 <b>Користувач у спам-листі</b>",
+    "spamlist_time": "    ⏰ <b>{time}</b>",
+    "diff": {
+      "y": "р.",
+      "mo": "міс.",
+      "d": "д.",
+      "h": "г.",
+      "m": "хв."
+    },
+    "ikbs": {
+      "get_vip": "Отримати VIP 👑",
+      "profile_settings": "🔧 Налаштування профілю",
+      "get_starcoins": "🪐 Поповнити астрони",
+      "my_transaction": "💳 Мої транзакції",
+      "muted_list": "🚫 Список замʼючених",
+      "profile_settings_ikb": {
+        "reg_date": "🗓 Дата реєстрації",
+        "id": "🆔 ID",
+        "status": "🎖️ Статус у групі",
+        "marriage": "💍 Шлюб",
+        "my_vip": "👑 Мій VIP"
+      }
+    }
+  },
+  "form": {
+      "header": "🪪 Профіль:"
+  },
+  "vip": {
+    "desc_vip_sub": "<b><i>✨ Стань VIP та відкрий нові можливості! ✨</i></b>\n\n<b>З VIP ти отримуєш те, чого немає в інших:</b>\n\n<b>🔕 Вимикай розсилки у чатах.</b>\n<b>👁️ Ховай елементи профілю.</b>\n<b>💔 Безкоштовні розлучення без обмежень.</b>\n\n<b>Досить обмежень — підключай преміум і користуйся ботом на повну! 🚀</b>",
+    "active_until_text": "Поточний VIP діє до {date} ⏰\nПісля оплати VIP буде продовжено до {new_date} 🔄",
+    "no_vip_text": "Зараз VIP немає ⛔\nПісля оплати VIP буде активний до {new_date} ✨",
+    "chosen_plan_text": "VIP на {months} міс. обрано! ⭐️\n\n{vip_text}\n\nНе втрать усі переваги VIP! 💎",
+    "owner_message": "👑 Оскільки ви власник бота, оплата не потрібна. Ваш VIP активується автоматично після натискання кнопки.",
+    "invoice_title": "✨ Оплата VIP ✨",
+    "invoice_label": "⭐️ VIP {months} міс.",
+    "ikbs": {
+      "1_month": "1 місяць",
+      "6_month": "6 місяців",
+      "12_month": "12 місяців",
+      "change_price": "Змінити вартість ⭐️",
+      "buy_vip": "Придбати VIP 👑"
+    }
+  },
+  "transaction": {
+    "transaction_text": "Покупка VIP підписки на {months} міс.",
+    "success_payment": "✅ Платіж успішний!\nНа ваш баланс зараховано {amount} астронів 🎉"
+  },
+  "bananas": {
+    "must_subscribe": "🚫 Щоб користуватися ботом, підпишіться на канал:",
+    "cooldown_left": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\nВаш банан: <b>{size} см 🍌</b>\nЗбільшити можна буде 📏\nЧерез: <b>{time_left}</b> {clock}⏳\n\n🔝 Щоб дізнатися своє місце в рейтингу, надішліть: <code>Топ банан</code>",
+    "grown": "🍌 <b>Банан {title} <a href=\"tg://user?id={user_id}\">{user_name}</a> виріс на {delta} см.</b>\nТепер він <b>{new_size} см</b>. 📏"
+  },
+  "rp": {
+    "local_header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n<b>📍 Локальні RP команди:</b>\n",
+    "adult_local_header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n<b>🔞 Локальні RP команди:</b>\n",
+    "local_empty": "— поки що немає —",
+    "cmd_line_reply": "<code>{cmd}</code> (Відповідь)\n"
+  },
+  "admins": {
+    "list_header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n<b>🤴🏻 Власник:</b>\n    <a href=\"tg://user?id={owner_id}\">{owner_name}</a>\n    <a href=\"tg://user?id={second_owner_id}\">{second_owner_name}</a>\n\n<b>👮🏼‍♂️ Зоряні агенти:</b>\n",
+    "admin_with_name": "    <a href=\"tg://user?id={id}\">{name}</a>",
+    "admin_no_data": "    {id} (немає даних)",
+    "broadcast_flag": "      Розсилка: {flag}",
+    "remove_hint": "      <code>-агент {id}</code>"
+  },
+  "links": {
+    "list_header": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\n<b>Дозволені посилання:</b>\n",
+    "item": "<code>{link}</code>"
+  },
+  "stop": {
+    "self_forbidden": "⚠️ {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, не можна вказати себе у команді \"!стоп\".",
+    "id_not_found": "⚠️ {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, користувача з ID {target_id} не знайдено.",
+    "username_not_found": "⚠️ {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, користувача з юзернеймом @{username} не знайдено.",
+    "set_by_id": "🚫 {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, користувач <a href=\"tg://user?id={target_id}\">{target_name}</a> більше не зможе вас тегати. Щоб вимкнути — надішліть команду ще раз.",
+    "unset_by_id": "✅ {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, користувач <a href=\"tg://user?id={target_id}\">{target_name}</a> зможе вас тегати. Щоб увімкнути — надішліть команду ще раз.",
+    "set_reply": "🚫 {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, користувач <a href=\"tg://user?id={target_id}\">{target_name}</a> більше не зможе вас тегати. Щоб змінити — надішліть команду ще раз.",
+    "unset_reply": "✅ {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, користувач <a href=\"tg://user?id={target_id}\">{target_name}</a> зможе вас тегати. Щоб змінити — надішліть команду ще раз.",
+    "need_args": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, команда \"!стоп\" має бути відповіддю або містити ID/юзернейм, напр.: <code>!стоп 1234567</code> чи <code>!стоп @username</code>.",
+    "cannot_detect_reply_user": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, не вдалося визначити користувача у відповіді."
+  },
+  "delete": {
+    "not_allowed": "🚫 Ви не можете видалити це повідомлення."
+  },
+  "duel": {
+    "hud": {
+      "title": "<b>Космічна дуель <i>\"Зоряний бій\"</i></b> 💫",
+      "versus": "{challenger} ⚔️ {challenged}",
+      "health_label": "Здоров'я",
+      "shield_label": "Міцність щита",
+      "energy_label": "Енергія",
+      "phaser_label": "Фейзер",
+      "action": {
+        "maneuver": "Активовано маневр 🌀",
+        "shield": "Активовано щит 🛡️"
+      },
+      "next_turn": "🛰️ {next_link}, твій хід..."
+    },
+    "invite": {
+      "header": "{inviter} запрошує {opponent} на <b>Космічну дуель <i>\"Зоряний бій\"</i></b> 💫",
+      "goal": "Мета — <i>перемогти суперника, використовуючи космічну зброю, маневри та щити.</i>",
+      "kit": "У кожного гравця є:\n🔫 <b>Фейзер</b> — атакує.\n🌀 <b>Маневр</b> — шанс ухилитися.\n🛡️ <b>Щит</b> — блокує шкоду.\n🌡️ <b>Перегрів</b> — часті постріли перегрівають зброю.\n🌠 <b>Орбітальні бонуси</b> — випадкові бафи.",
+      "enter_bet": "💫 {inviter}, введіть ставку на міжзоряний бій:"
+    },
+    "post_bet": {
+      "prices_line": "{inviter}: -{prize} 🪙\n{opponent}: -{prize} 🪙",
+      "prize_pool": "🏆 Призовий фонд: {pool} 💵",
+      "prompt_challenged": "⚔️ {challenged}, оберіть: вступити в дуель чи втекти 🏃"
+    },
+    "errors": {
+      "pm_unavailable": "⚠️ Команда \"!дуэль\" недоступна в особистих повідомленнях.",
+      "self_forbidden": "⚠️ {you}, не можна викликати себе на Космічну дуель.",
+      "bot_forbidden": "⚠️ {you}, не можна викликати бота на Космічну дуель.",
+      "user_not_found_by_id": "⚠️ {you}, користувача з ID {uid} не знайдено в чаті.",
+      "already_in_duel_by_self": "⚠️ Ви вже берете участь у Космічній дуелі.",
+      "opponent_already_in_duel": "⚠️ Ваш опонент вже бере участь у Космічній дуелі.",
+      "amount_integer_required": "⚠️ Вкажіть кількість монет цілим числом.",
+      "amount_range": "⚠️ Ви можете поставити від 1000 до <b>{max}</b> 🪙"
+    },
+    "cancel": {
+      "title": "<b>Скасування Космічної дуелі <i>\"Зоряний бій\"</i></b> 💫",
+      "runner_left": "{runner} полетів з орбіти бою 🚀"
+    },
+    "give_up": {
+      "line": "{runner} здався. Космос не пробачає слабкість."
+    },
+    "coins": {
+      "loser": "💀 {loser}: -{prize} 🪙",
+      "winner": "👑 {winner}: <b>+{gain}</b> 🪙"
+    },
+    "guide": "🔫 Фейзер — завдає 20 шкоди\n🌀 Маневр — 50% шанс ухилу (-30⚡)\n🛡️ Щит — міцність впливає на шанс блоку\n🌡️ Перегрів — фейзер перегрівається при 100°C\n🔋 Енергія — +10⚡ кожен хід",
+    "actions": {
+      "phaser_overheated": "🌡️ Фейзер перегрітий — стріляти неможливо.\nОберіть іншу дію 🕹️",
+      "no_energy_maneuver": "🪫 Недостатньо енергії — маневр неможливий.\nОберіть іншу дію 🕹️",
+      "hit_direct": "💥 Пряме влучання! {defender} втрачає 20 HP!",
+      "shield_blocked": "{attacker} стріляє, але {defender} відбиває постріл! Щит -10% 🛡️",
+      "shield_breached": "{attacker} пробиває щит {defender} 💢",
+      "dodge_success": "💨 Снаряд пролетів повз — {defender} ухилився в останню мить!",
+      "dodge_fail": "⚠️ Маневр не вдався — {attacker} влучив у {defender}!"
+    },
+    "finish": {
+      "header": "🏁 Дуель завершена:",
+      "winner": "{winner} перемагає 👑",
+      "loser_zero": "{loser} втратив усе здоров'я 💔"
+    }
+  },
+  "exit": {
+    "admin_block": "🔒 {title} <a href=\"tg://user?id={user_id}\">{user_name}</a>, адміністратори та власники не можуть вийти через команду.\nСкористайтеся стандартним способом Telegram — «Вийти з групи». 🚀",
+    "error": "⚠️ Помилка:\n<code>{error}</code>",
+    "ok": "🚪 {title} <a href=\"tg://user?id={user_id}\">{user_name}</a> залишає нашу галактику 🌌 і виходить із чату за командою <code>{cmd}</code>.\nДо нових зоряних зустрічей! 👨🏻‍🚀✨"
+  },
+  "common": {
+    "blacklist_block": "Ви у чорному списку. Я з вами не спілкуюся!"
+  },
+  "transfer": {
+    "self_forbidden": "⚠️ {user_link}, не можна вказати себе у команді \"!передать\".",
+    "bot_forbidden": "⚠️ {user_link}, не можна передавати валюту боту.",
+    "choose_currency": "Виберіть, яку валюту передати {target_link} 📩",
+    "not_found_or_unregistered": "⚠️ Користувача не знайдено або він не зареєстрований у боті.",
+    "need_args": "{user_link}, команда \"!передать\" має містити ID/юзернейм або бути відповіддю, напр.: <code>!передать 1234567</code> чи <code>!передать @username</code>.",
+    "enter_amount_coins": "Введіть кількість монет для передачі 💰",
+    "enter_amount_starcoins": "Введіть кількість астронів для передачі 💰",
+    "confirm": "💳 Підтвердіть передачу <b>{amount} {emoji}</b> для {target_link}.",
+    "must_be_integer_coins": "⚠️ Вкажіть кількість монет цілим числом.",
+    "must_be_integer_starcoins": "⚠️ Вкажіть кількість астронів цілим числом.",
+    "range_coins": "⚠️ Ви можете передати від {min} до <b>{max}</b> 🪙",
+    "range_starcoins": "⚠️ Ви можете передати від {min} до <b>{max}</b> 🪐",
+    "success": "💳 {user_link} передав(ла) <b>{amount} {emoji}</b> для {target_link}."
+  },
+  "kb": {
+    "subscribe": {
+      "subscribe": "🔔 Підписатися",
+      "i_subscribed": "✅ Я підписався"
+    },
+    "nav": {
+      "minus5": "⏪-5",
+      "minus50": "⏮️-50",
+      "plus50": "⏭️+50",
+      "plus5": "⏩+5",
+      "prev": "⬅️-1",
+      "delete": "🗑️",
+      "next": "➡️+1",
+      "clear": "🧹 Очистити"
+    },
+    "common": {
+      "back": "⬅️ Назад",
+      "delete": "🗑️ Видалити",
+      "support": "👨🏻‍💻 Підтримка",
+      "news": "🔔 Новини",
+      "for_all": "🙍🏻‍♂️ Для всіх",
+      "for_admins": "👮🏻‍♂️ Для адмінів",
+      "add_bot": "Додати бота"
+    },
+    "help_tabs": {
+      "moder": "🔱 Модер",
+      "prankster": "😈 Пустун",
+      "stats": "📈 Статистика"
+    },
+    "roulette": {
+      "range_1_3": "1к 1-3",
+      "range_4_6": "1к 4-6",
+      "range_7_9": "1к 7-9",
+      "range_10_12": "1к 10-12",
+      "on_red": "1к 🔴",
+      "on_black": "1к ⚫️",
+      "on_green": "1к 🟢",
+      "again": "🆕 Спочатку",
+      "double": "2️⃣ Подвоїти",
+      "spin": "🔄 Крутити",
+      "bag": "💰 Мішок",
+      "more_coins": "🎁 Отримати більше монет",
+      "cancel": "🛑 Скасувати",
+      "join": "🎲 Приєднатися"
+    },
+    "wedding": {
+      "cancel": "💔 Скасувати весілля",
+      "husband": "🤵 Наречений",
+      "wife": "👰 Наречена",
+      "registrar": "🖊 Реєстратор",
+      "witness_man": "👨‍💼 Дружба",
+      "witness_woman": "👩‍💼 Дружка",
+      "guest": "🥂 Гість",
+      "sign": "✍️ Розписатися",
+      "marriage": "💍 Одружитися"
+    },
+    "divorce": {
+      "yes": "💔 Так",
+      "no": "❤️‍🩹 Ні",
+      "confirm_yes": "✅ Так",
+      "confirm_no": "❌ Ні"
+    },
+    "profile": {
+      "muted_list": "🚫 Список зам'ючених"
+    },
+    "lang_menu": {
+      "ru": "🇷🇺 Російська",
+      "ua": "🇺🇦 Українська",
+      "en": "🇺🇸 English",
+      "back": "⬅️ Назад"
+    },
+    "blacklist": {
+      "groups": "👥 Групи",
+      "users": "👤 Користувачі",
+      "banlist": "⛔️ Бан-лист"
+    },
+    "rp": {
+      "adult_show": "🔞 Показати 18+ команди",
+      "regular_show": "📍 Показати звичайні",
+      "close": "❌ Закрити",
+      "type_regular": "Тип: Звичайне ✅",
+      "type_nsfw": "Тип: 18+ 🔞",
+      "cancel": "Скасувати",
+      "guide": "ℹ️ Гайд",
+      "phaser": "🔫 Фейзер",
+      "maneuver": "🌀 Маневр",
+      "shield": "🛡️ Щит",
+      "give_up": "🏳️ Здатися",
+      "back": "⬅️ Назад"
+    },
+    "chat_mgmt": {
+      "kick": "👟 Кік",
+      "migration": "🪶 Міграція",
+      "welcome": "👋 Привітання",
+      "langs": "🌐 Мови",
+      "back": "⬅️ Назад"
+    },
+    "migration": {
+      "confirm": "✅ Підтвердити",
+      "cancel": "❌ Скасувати"
+    },
+    "events": {
+      "what_to_log": "🎛 Що записувати в канал?",
+      "change_log_group": "🔄 Змінити канал подій",
+      "delete_log_group": "❌ Видалити канал подій",
+      "back": "⬅️ Назад",
+      "menu_title": "🔍 Канал Подій",
+      "menu_description": "Тут ви можете налаштувати канал, у якому зберігатимуться всі події цієї групи.\\nЩоб додати канал, ви повинні бути його власником, а @iSpaceRobot має бути Адміном цього каналу. Якщо ці умови виконані, натисніть кнопку нижче.\\n<i>Канал може бути як публічним, так і приватним.</i>",
+      "current_log_chat": "Поточний лог-чат:",
+      "not_found": "Не знайдено.",
+      "add_chat_first": "⚠️ Додайте чат для відправки логів перед тим, як змінювати налаштування.",
+      "logging_state": "Логування {event} - {state}",
+      "logging_enabled": "увімкнено ✅",
+      "logging_disabled": "вимкнено 📴",
+      "introductions_info": "➕ Запис користувачів, які приєднуються до групи.",
+      "exits_info": "🚪 Запис користувачів, які виходять із групи.",
+      "punishments_info": "⚖️ Запис автоматично застосованих покарань (антиспам, антифлуд, заборонені слова тощо).",
+      "arab_info": "👳🏾‍♂️ Запис покарань за використання арабських символів.",
+      "bot_added_info": "🤖 Запис дій, пов’язаних із додаванням ботів у групу.",
+      "ban_mute_info": "🔒 Запис блокувань і їх зняття, заглушення та видалення з групи адміністраторами/модераторами.",
+      "admin_info": "🛡️ Запис викликів адміністрації командою @admin.",
+      "settings_info": "⚙️ Запис змін налаштувань.",
+      "role_info": "🎭 Запис призначення та зняття ролей.",
+      "change_log_group_denied": "🚫 Ця кнопка вам недоступна.",
+      "current_chat_info": "Поточний лог-чат:",
+      "send_chat_id": "Надішліть ID чату, у який будуть відправлятися логи.\\nЩоб отримати ID чату, використайте в ньому команду <code>/id</code>.",
+      "chat_set_success": "✅ Чат {title} було призначено для логів.\\n\\nТепер ви можете налаштувати, які саме логи потрібні, у розділі \"🎛 Що записувати в канал?\"",
+      "chat_not_found": "⚠️ Чат з ID: <code>{chat_id}</code> не знайдено. Якщо бота немає в цьому чаті, його потрібно додати.",
+      "chat_deleted": "🗑️ Ви успішно видалили чат для логів. Щоб логи знову відправлялись, призначте чат.",
+      "names": {
+        "introductions": "вступів",
+        "exits": "виходів",
+        "punishments": "покарань",
+        "arab": "араб. символів",
+        "bot_added": "додавання ботів",
+        "ban_mute": "заблокованих/заглушених",
+        "admin": "@Admin",
+        "settings": "налаштувань",
+        "role": "ролей"
+      }
+    },
+    "events_settings": {
+      "introductions": "➕ Вступи",
+      "exits": "🚪 Виходи",
+      "punishments": "⚖️ Покарання",
+      "arab": "👳🏾‍♂️ Араб. символи",
+      "bot_added": "🤖 Додавання ботів",
+      "ban_mute": "🔒 Заблокувати/Заглушити",
+      "admin": "🛡️ @Admin",
+      "settings": "⚙️ Налаштування",
+      "role": "🎭 Ролі",
+      "back": "⬅️ Назад"
+    },
+    "night_mode": {
+      "enable": "✅ Увімкнути",
+      "disable": "✖️ Вимкнути",
+      "delete_media": "📸 Видаляти медіа",
+      "global_silence": "🌐 Глобальна тиша",
+      "silence": "🤫 Тиша",
+      "notify": "🔔 Сповіщення",
+      "set_time": "⏱️ Встановити час",
+      "timezone": "🌍 Часовий пояс",
+      "back": "⬅️ Назад"
+    },
+    "time_change": {
+      "tutorial": "ℹ️ Туторіал",
+      "start": "▶️ Початок",
+      "end": "⏹️ Кінець",
+      "confirm": "✅ Підтвердити",
+      "back": "⬅️ Назад"
+    },
+    "timezones": {
+      "back": "⬅️ Назад"
+    },
+    "kick": {
+      "inactive": "💤 Кік неактив",
+      "active": "🚀 Кік актив",
+      "nubs": "👶 Кік новачків",
+      "silence": "🤐 Кік мовчунів",
+      "by_period": "📆 За період",
+      "by_count": "🔢 За кількістю користувачів",
+      "mix": "🧮 За період і кількістю",
+      "back": "⬅️ Назад",
+      "confirm": "✅ Підтвердити",
+      "cancel": "❌ Скасувати"
+    },
+    "duel": {
+      "coins": "🪙 Монети",
+      "mute": "🔇 Мут",
+      "kick": "👟 Кік",
+      "ban": "⛔️ Бан",
+      "agree": "⚔️ Погодитися",
+      "decline": "🏃 Відмовитися"
+    },
+    "currency": {
+      "coins": "🪙 Монети",
+      "starcoins": "🪐 Астрони",
+      "confirm": "✅ Підтвердити",
+      "cancel": "❌ Скасувати"
+    },
+    "shalosti": {
+      "nsfw": "🔞 RP 18+",
+      "wedding": "💍 Весілля",
+      "roulette": "🎰 Рулетка"
+    },
+    "delete": {
+      "trash": "🗑️",
+      "back_like": "⬅️ Назад",
+      "cancel": "❌ Скасувати"
+    },
+    "spamlist": {
+      "clear": "🧹 Очистити",
+      "delete": "🗑️",
+      "confirm_yes": "✅ Так",
+      "confirm_no": "❌ Ні"
+    },
+    "generation": {
+      "cancel": "⛔ Скасувати"
+    },
+    "open_shalosti": "😈 Відкрити «Шалості / Ігри»"
+  },
+  "nav": {
+    "alerts": {
+      "not_your_panel": "🚫 Цю панель відкрив інший користувач.",
+      "swoosh": "вжух ✨",
+      "last_page": "Ви на останній сторінці."
+    },
+    "tops": {
+      "banana": "🏆 Глобальний рейтинг бананів:",
+      "coins": "🏆 Глобальний рейтинг монет:",
+      "msg": "🏆 Глобальний рейтинг спамерів:",
+      "group": "🏆 Глобальний рейтинг чатів:"
+    },
+    "labels": {
+      "your_banana": " Ваш банан: {value} {unit} 🍌",
+      "your_balance": " Ваш баланс: {value} 🪙",
+      "msgs_count_line": " Кількість повідомлень: {value} 🗯",
+      "your_place": " Ваше місце: [{place}/{count}] 🔝",
+      "chat_place": " Місце чату: [{place}/{count}] 🔝",
+      "on_page": " На сторінці: [{user_page}/{total_pages}] 🗒",
+      "page": " Сторінка [{page}/{total_pages}] 🗂"
+    },
+    "marriages": {
+      "your": "💍 Ваш шлюб:",
+      "spouses": " Чоловік/Дружина: {husband} ❤️ {wife}",
+      "date": " 🗓 {date}",
+      "duration": " ⌚️ {duration}",
+      "list_title": "\n\n💒 Список усіх шлюбів:",
+      "none": "🦅 Ви не перебуваєте у шлюбі."
+    },
+    "spamlist": {
+      "title": "⚠️ Список спамерів:",
+      "count": " 🔢 Кількість: {count}"
+    },
+    "units": {
+      "cm": "см",
+      "y": "р.",
+      "mo": "міс.",
+      "d": "д.",
+      "h": "год.",
+      "m": "хв."
+    }
+  },
+  "tops": {
+    "common": {
+      "your_place": "Ваше місце: [{place}/{total}] 🔝",
+      "on_page": "На сторінці: [{page}/{total}] 🗒",
+      "page": "Сторінка [{page}/{total}] 🗂",
+      "blacklist_dm": "Ви у чорному списку. Я з вами не спілкуюся!"
+    },
+    "banana": {
+      "title": "🏆 Глобальний рейтинг бананів:",
+      "your_value": "Ваш банан: {value} см 🍌"
+    },
+    "coins": {
+      "title": "🏆 Глобальний рейтинг монеток:",
+      "your_value": "Ваш баланс: {value} 🪙"
+    },
+    "messages": {
+      "title": "🏆 Глобальний рейтинг спамерів:",
+      "your_value": "Кількість повідомлень: {value} 🗯"
+    },
+    "groups": {
+      "title": "🏆 Глобальний рейтинг чатів:",
+      "group_value": "Кількість повідомлень: {value} 🗯",
+      "group_place": "Місце чату: [{place}/{total}] 🔝"
+    },
+    "marriages": {
+      "title_list_prefix": "💒 Список усіх шлюбів:",
+      "not_married": "🦅 Ви не перебуваєте у шлюбі."
+    },
+    "spamlist": {
+      "title": "⚠️ Список спамерів:",
+      "count": "🔢 Кількість: {count}"
+    },
+    "errors": {
+      "no_permission_spam": "🚫 {user}, у вас немає права використовувати команду \"!спам\"."
+    }
+  },
+  "texts": {
+    "help": "Мені потрібні права адміністратора:\n    ✅ Видалення повідомлень\n    ✅ Запрошувальні посилання\n\nЯкщо користуєтесь модерацією, також надайте:\n    ⚠️ Блокування користувачів\n\nЗа замовчуванням усі функції в групах ВИМКНЕНІ 📴\nЩоб увімкнути, надішліть у групі: !космос, потім натисніть \"⚙️\".",
+    "welcome": "@iSpaceRobot — ваш охоронець порядку!\n\n👮 Стежить за атмосферою та модерує чат.\n🎲 Розваги та ігри для гарного настрою.\n⚙️ Гнучкі налаштування для адміністраторів.\n🔒 Захист від спаму та небажаних повідомлень.\n\n📌 /help — повний список команд.\n\n🔗 <a href=\"https://t.me/catalog_iSpace\">Каталог ✨</a>",
+    "start": "Ласкаво просимо до чат-бота!\n\nБот допоможе зручно керувати чатом і весело проводити час.\n\n🛠 Керування чатом:\nАдміни швидко модерують, карають порушників і підтримують порядок.\n\n🎮 Ігри та розваги:\nКрутіть рулетку, ростіть свій «банан» та беріть участь в активностях!\n\n🌐 Гнучкі налаштування:\nВід фільтрів посилань до унікальних RP-команд — усе налаштовується.\n\n🔒 Захист:\nБез небажаних посилань і спаму! Бот створює комфорт.\n\nСкористайтесь /help, щоб переглянути всі функції."
+  },
+  "commands": {
+    "admins": "👮🏻‍♂️ Команди Адмінів:\n<code>+агент</code> (розсилка:так) (Reply) — видати адміна бота\n<code>-агент</code> (Reply/[ID]) — забрати адміна\n<code>!розсилка</code> (Reply) — розіслати відповідане повідомлення\n<code>!логи</code> — встановити цей чат як лог-чат\n<code>!реклама</code> — цей чат отримуватиме статистику розсилки\n<code>+чс &lt;ID&gt;/</code> (Reply) — додати користувача/чат у ЧС\n<code>-чс &lt;ID&gt;/</code> (Reply) — прибрати з ЧС\n<code>+грп &lt;команда&gt; &lt;текст&gt; &lt;GIF_ID&gt;</code> — додати глобальну RP-команду\n<code>-грп &lt;команда&gt;</code> — видалити глобальну RP-команду",
+    "moderators": "🔱 Команди Модератора:\n<code>!бан &lt;тривалість (10м/2ч)&gt;</code> (Reply) — бан\n<code>!кік</code> (Reply) — кік\n<code>!мут &lt;тривалість (10м/2ч)&gt;</code> (Reply) — мут\n<code>!ремут</code> (Reply) — зняти мут\n<code>+посилання &lt;link&gt;</code> — дозволити посилання, коли antilink увімкнено\n<code>-посилання &lt;link&gt;</code> — забрати дозволене посилання\n<code>+рп (команда) (текст) (GIF_ID)</code> — додати локальну RP-команду\n<code>-рп (команда)</code> — видалити локальну RP-команду\n<code>!стоп</code> (Reply або ID) — вимк./увімк. згадки/відповіді від користувача\n<code>!вихід</code> — миттєвий вихід бота з групи.",
+    "statics": "📈 Команди Статикс:\n<code>/start</code> — почати\n<code>/help</code> — список команд\n<code>/id</code> — ID чату\n<code>!космос</code> — статистика та налаштування\n<code>!проф</code> — профіль\n<code>!агенти</code> — список агентів-адмінів\n<code>Топ банан</code> — топ за «бананом»\n<code>Топ смс</code> — топ за повідомленнями\n<code>Топ</code> — топ чатів за повідомленнями\n<code>Топ монет</code> — топ за монетами\n<code>!посилання</code> — список дозволених посилань"
+  },
+  "shalun": {
+    "menu": "😈 Команди Спокусника:\n<code>!банан</code> — рости банан\n<code>!рулетка</code> — відкрити рулетку\n<code>!свадьба</code> — організувати весілля (починає наречений)\n<code>!развод</code> — розлучення\n<code>!грп</code> — список глоб. команд (для всіх чатів)\n<code>!рп</code> — список локальних команд (для цього чату)\n\nГлобальні RP-команди:\n",
+    "local_header": "<b>Локальні RP-команди:</b>\n"
+  },
+  "help_menu": {
+    "head": "<b>Глобальні RP-команди</b>:\n<code>!свадьба</code> (Reply) — одружитись\n<code>!банан</code> (Reply) — ріст банана\n"
+  },
+  "tutorials": {
+    "add_grp_cmd": "Неправильний формат команди!\nПриклад:\nРядок: <code>+рп !взять name1 &lt;b&gt;<b>взял(а)</b>&lt;/b&gt; на руки name2 🤗. 48</code>\nКоманда: !взять\nТекст: name1 <b>взял(а)</b> на руки name2.\nID GIF: 48"
+  },
+  "infos": {
+    "systemmsg": "🔧 Системні — видаляє системні повідомлення (вступи/виходи/видалення).",
+    "antiarab": "👳🏾‍♂️ Арабська — видаляє арабські літери та банить (також за подібні імена/біо).",
+    "antibot": "🤖 Боти — банить нових ботів, а того хто додав — мут 10 хв.",
+    "antichannel": "👤 Канали — видаляє повідомлення від імені каналу і блокує цей режим.",
+    "antiforward": "📢 Пересилки — видаляє і дає мут 5 хв за пересил із каналів (крім прив’язаного).",
+    "antilink": "🔗 Посилання — видаляє і дає мут 5 хв за сторонні посилання.",
+    "antihyper": "🔍 Гіперпосилання — видаляє і дає мут 5 хв.",
+    "antibutton": "🖲️ Кнопки — видаляє і дає мут 5 хв за посилання в кнопках.",
+    "antiuser": "🌀 @Юзери — видаляє і дає мут 10 хв за @згадки (каналів/груп/ботів).",
+    "antispam": "🛡️ Антиспам — видаляє і банить за спам (дублі, флуд тощо).",
+    "shalosti": "😈 Шалості / 🎮 Ігри — RP 18+, Весілля та Рулетка. Натисніть ➡️ щоб відкрити.",
+    "wedding": "💍 Весілля — реєстрація шлюбів/розлучень. Вкл/викл тут.",
+    "roulette": "🎰 Рулетка — міні-гра. Правою кнопкою — вкл/викл ставки та обертання."
+  },
+  "reactions": {
+    "to_owner_pins": [
+      "Ти бог пінів! 👑📌",
+      "Кожен твій пін — це мистецтво! 🎨📌",
+      "З твоїми пінами чат на висоті! 🔥📌",
+      "Твої піні — шедеври, без конкуренції! 🏆📌",
+      "Кожен пін — як новий закон! 📜📌",
+      "Так пінять можуть лише майстри! 💥📌",
+      "Ніхто не пінить так, як ти! 🌟📌",
+      "Ти робиш пини епічними — кожне повідомлення стає легендою! 🔥📌",
+      "Керуєш пінами як стратег! ⚔️📌",
+      "Пін — твій скіпетр влади! 🛠️📌",
+      "Твої піні влучають, як стріли Купідона! 💘📌",
+      "Ти надаєш пінам значення — без тебе вони ніщо! 🌟📌",
+      "Гідний нагороди за найкращу стратегію пінів! 🏅📌",
+      "Якби пін був олімпійським видом — ти чемпіон! 🥇📌",
+      "Кожен пін — віха в історії чату! 🔄📌",
+      "Пінити — це мистецтво, і ти — митець! 🎨📌",
+      "Твій пін — фінальний акорд симфонії! 🎶📌",
+      "Твої піні — віхи історії, яку ти пишеш! 📚📌"
+    ],
+    "to_pin": [
+      "Хто дав йому адмінку?",
+      "Будь ласка, заберіть у цієї людини право пінити!",
+      "Досить!",
+      "І що це таке?",
+      "Господи, хто дозволив цей пін?",
+      "Пінодрочер!!!",
+      "...",
+      "Багато шуму даремно — ніхто не читатиме!",
+      "Він не втомився пінити?",
+      "Перестань пінити маячню -_-",
+      "Нікому не цікаво -.-",
+      "Нічого робити?",
+      "Запінь собі дупу",
+      "Все одно нікому не цікаво.",
+      "Що ти таке верзеш, казкарю :)",
+      "Бла-бла-бла..."
+    ],
+    "to_pin_night": [
+      "Уфф",
+      "Усі сплять!",
+      "Дай поспати!",
+      "Може вже досить?",
+      "Навіщо з сповіщенням?!",
+      "Ледь задрімав — і ти це пінуєш("
+    ]
+  },
+  "weddings": {
+    "close_people": "Затишна зала, кілька близьких, тихі привітання. Свідки усміхаються під час обміну обручками. Реєстратор оголошує їх подружжям — лунають м’які оплески. Вони обіймаються, відчуваючи тепло та підтримку присутніх. 🥂",
+    "with_guests": "Гамір стихає, коли звучить заповітне «так». Оплески, конфеті, музика. Друзі й рідні кидаються вітати, тости лунають один за одним. Весілля спалахує яскравим святом, де любов — головний герой. 🎶💍"
+  },
+  "logs": {
+    "new_user": "🎂 Новий користувач у ПМ бота!\n👤 Ім'я: {user_link}\n🌀 Юзер: {username}\n🆔 ID: <code>{user_id}</code>\n🍌 Банан: {banana} см\n💰 Монети: {coins}\n{in_blacklist}\n#new_user 🆕 {bl_tag}",
+    "in_blacklist_yes": "💔 У ЧС: так (ігнорую)",
+    "in_blacklist_no": "❤️ У ЧС: ні",
+    "bl_tag_yes": "#in_blacklist 💔",
+    "bl_tag_no": "",
+    "new_chat": "🥳 Мене додали в чат!\n💬 Назва: <a href='{chat_link}'>{chat_title}</a>\n🆔 ID групи: <code>{chat_id}</code>\n🔗 Посилання: {invite_link}\n👥 Учасників: <b>{members}</b>\n{in_blacklist}\n\n👤 Ім'я: {adder_link}\n🌀 Юзер: {adder_username}\n🆔 ID: <code>{adder_id}</code>\n\n#new_chat ➕ {bl_tag}",
+    "bot_kicked": "👢 Мене видалили з чату!\n💬 Назва: <code>{chat_title}</code>\n🆔 ID групи: <code>{chat_id}</code>\n❤️ У ЧС: ні\n\n👤 Видалив: {remover_link}\n🌀 Юзер: {remover_username}\n🆔 ID: <code>{remover_id}</code>\n\n#bot_kicked ➖",
+    "bot_left": "👟 Я вийшов з чату!\n💬 Назва: <a href='{chat_link}'>{chat_title}</a>\n🆔 ID групи: <code>{chat_id}</code>\n👥 Учасників: <b>{members}</b>\n🔗 Посилання: {invite_link}\n❤️ У ЧС: так\n\n#bot_left ➖",
+    "banlist_add": "🗝 Користувача додано до бан-ліста!\n👤 {user_link}\n🌀 Юзер: {username}\n🆔 ID: <code>{user_id}</code>\n#add_user_to_banlist ⛔️",
+    "banlist_found": "🗝 Знайдено і заблоковано з бан-ліста!\n👤 {user_link}\n🌀 Юзер: {username}\n🆔 ID: <code>{user_id}</code>\n\n💬 Чат: <a href='{chat_link}'>{chat_title}</a>\n🆔 ID групи: <code>{chat_id}</code>\n👥 Учасників: <b>{members}</b>\n🔗 Посилання: {invite_link}\n#find_user_from_banlist 🔎",
+    "banlist_delete": "🗝 Користувача прибрано з бан-ліста!\n👤 {user_link}\n🌀 Юзер: {username}\n🆔 ID: <code>{user_id}</code>\n#delete_user_from_banlist ❎",
+    "spamlist_add": "🗝 Користувача додано до спам-ліста!\n👤 {user_link}\n🌀 Юзер: {username}\n🆔 ID: <code>{user_id}</code>\n💬 Чат: <a href='{chat_link_full}'>{chat_title}</a>\n\n🛡 <b>Права бота:</b>\n{rights_list}\n#add_user_to_spamlist ⛔️",
+    "spamlist_found": "🗝 Знайдено і заблоковано зі спам-ліста!\n👤 {user_link}\n🌀 Юзер: {username}\n🆔 ID: <code>{user_id}</code>\n\n💬 Назва: <a href='{chat_link}'>{chat_title}</a>\n🆔 ID групи: <code>{chat_id}</code>\n👥 Учасників: <b>{members}</b>\n🔗 Посилання: {invite_link}\n#find_user_from_spamlist 🔎",
+    "spamlist_delete": "🗝 Користувача прибрано зі спам-ліста!\n👤 {user_link}\n🌀 Юзер: {username}\n🆔 ID: <code>{user_id}</code>\n#delete_user_from_spamlist ❎",
+    "spamlist_clear": "🗝 Спам-ліст очищено!\n👤 Користувачі:\n{users_list}\n#clear_spamlist 🧹",
+    "blacklist_add": "🗝 Додано до ЧС!\n👤 {user_link}\n🌀 Юзер: {username}\n🆔 ID: <code>{user_id}</code>\n#add_user_to_blacklist 🔐",
+    "blacklist_delete": "📤 Прибрано з ЧС!\n👤 {user_link}\n🌀 Юзер: {username}\n🆔 ID: <code>{user_id}</code>\n#delete_user_from_blacklist 🔓",
+    "blacklist_chat_add": "🗝 Групу додано до ЧС!\n👤 Назва: <code>{chat_title}</code>\n🆔 ID групи: <code>{chat_id}</code>\n👥 Учасників: <b>{members}</b>\n🔗 Посилання: {invite_link}\n#add_chat_to_blacklist 🔐",
+    "blacklist_chat_delete": "📤 Прибрано з ЧС: {entity}!\n🆔 ID: <code>{id}</code>\n#delete_chat_from_blacklist 🔓",
+    "daily_queries": "📆 Щоденний звіт!\n🕰 За: {date}\n🔄 Запитів за 24г: {count}\n\n0️⃣ Лічильник скинуто.\n\n#reset_queries",
+    "daily_clean_header": "🧹 <b>Щоденне прибирання!</b>",
+    "daily_clean_progress": "💬 Перевірено чатів: {total}\n\n✅ Працюють: {ok}\n    👤 Користувачів: {users}\n\n❌ Не працюють: {bad}\n    ⛔️ Заблоковано: {forbidden}/{bad_fb}\n    ♻️ Видалено: {not_found}/{bad_all}\n    ❗️ Інші помилки: {other}/{bad_all}\n\n    🗑 Видалено з БД: {removed}\n\n 🌀 Оновлено юзернеймів: {updated}\n\n🛜 В процесі\n\n#daily_clean",
+    "daily_clean_done": "🧹 <b>Щоденне прибирання!</b>\n\n💬 Всього чатів: {total}\n\n✅ Працюють: {ok}\n    👤 Користувачів: {users}\n\n❌ Не працюють: {bad}\n    ⛔️ Заблоковано: {forbidden}/{bad_fb}\n    ♻️ Видалено: {not_found}/{bad_all}\n    ❗️ Інші помилки: {other}/{bad_all}\n\n    🗑 Видалено з БД: {removed}\n\n 🌀 Оновлено юзернеймів: {updated}\n\n⏱️ Тривалість: {m}хв {s}с {ms}мс\n\n✅ Завершено ✅\n\n#daily_clean",
+    "broadcast_item": "<b>{index}.</b> ✅ Розсилка надіслана!\n💬 Назва: <a href='{chat_link}'>{chat_title}</a>\n🆔 ID групи: <code>{chat_id}</code>\n🔗 Посилання: {invite_link}\n👥 Учасників: <b>{members}</b>\n\n#broadcast_successfully 📩",
+    "broadcast_error": "🚨 Помилка розсилки!\n💬 Назва: <a href='{chat_link}'>{chat_title}</a>\n🆔 ID групи: <code>{chat_id}</code>\n🔗 Посилання: {invite_link}\n👥 Учасників: <b>{members}</b>\n\n ❗️ Помилка: <code>{error}</code>\n\n#broadcast_error ⚠️",
+    "broadcast_error_not_found": "🚨 Помилка розсилки!\n🆔 ID групи: <code>{chat_id}</code>\n\n ❗️ Помилка: <code>{error}</code>\n\n#broadcast_error ⚠️",
+    "broadcast_no_rights_media": "⚠️ Недостатньо прав!\n💬 Назва: <a href='{chat_link}'>{chat_title}</a>\n🆔 ID групи: <code>{chat_id}</code>\n🔗 Посилання: {invite_link}\n👥 Учасників: <b>{members}</b>\n\n 📷 Повідомлення надіслано без медіа через брак прав\n\n#no_rights_to_send_media 🚫"
+  },
+  "my_commands": {
+    "start": "Дізнатися про бота",
+    "help": "Список команд"
+  },
+  "guard": {
+    "weddings_off_explain": "💍 Розділ «Весілля» зараз вимкнено.\nАдмінам: ⚙️ Налаштування → 😈 Шалості / 🎮 Ігри → 💍 Весілля — перемкніть на ✅.",
+    "weddings_off_alert": "💍 Весілля вимкнені. Відкрийте: Налаштування → Шалості / Ігри → Весілля → ✅"
+  },
+  "create_wedding_text": {
+    "proposal": "{husband} пропонує провести церемонію одруження 👩‍❤️‍💋‍👨",
+    "started_intro": "Під урочисті слова реєстратора і тремтливий погляд закоханих починається їхній новий розділ — весілля, де два серця єднаються в одне. 💍✨\n",
+    "lines": {
+      "husband": "🤵🏻 Наречений: {husband} {ok}",
+      "wife": "👰🏻‍♀️ Наречена: {wife} {ok}",
+      "registrar": "🖊️ Реєстратор: {registrar}",
+      "witness_man": "👨🏻‍💼 Дружба: {witness_man}",
+      "witness_woman": "👩🏻‍💼 Дружка: {witness_woman}",
+      "guests": "🥂 Гості: {guests}"
+    },
+    "guests_dash": "-",
+    "scenes": {
+      "close_people": "Затишна зала, кілька близьких, тихі привітання. Свідки усміхаються під час обміну обручками. Реєстратор оголошує їх подружжям — лунають м’які оплески. Вони обіймаються, відчуваючи тепло та підтримку присутніх. 🥂",
+      "with_guests": "Гамір стихає, коли звучить заповітне «так». Оплески, конфеті, музика. Друзі й рідні кидаються вітати; тости лунають один за одним. Весілля спалахує яскравим святом, де любов — головна роль. 🎶💍"
+    }
+  },
+  "cmd_wedding": {
+    "no_private": "⚠️ {user}, не можна організувати весілля в особистих повідомленнях.",
+    "need_reply": "{user}, команда \"!свадьба\" має бути відповіддю нареченого на повідомлення нареченої.",
+    "no_self": "{user}, не можна використати \"!свадьба\" на собі.",
+    "you_married_header": "{user}\n😕 Спершу потрібно розлучитися:\n\n{marriage}\n\n💔 Використайте: <code>!развод</code>\nУ відповідь на повідомлення вашого(ї) супруга(ги) 💞",
+    "target_married": "{user}, {target} уже в шлюбі.\n\n{marriage}",
+    "only_one_active": "{user}, одночасно в чаті може бути лише одне весілля.",
+    "already_created": "{user}, ви вже організували весілля. Спробуйте знайти його вище в чаті."
+  },
+  "cancel_wedding": {
+    "not_allowed": "🚫 {name}, скасувати весілля можуть лише наречений або наречена.",
+    "canceled": "{user}, весілля скасовано ❌."
+  },
+  "sign": {
+    "only_husband_wife": "🚫 {name}, підпис ставлять лише наречений і наречена.",
+    "need_roles": "⚠️ {name}, для підписання обов’язково мають бути: наречений, наречена, реєстратор, свідок і свідкиня.",
+    "already_signed": "🎉 {name}, ви вже підписали документ.",
+    "signed": "✅ {name}, ви підписали документ.{both_signed_hint}",
+    "both_signed_hint": "\nЄ два підписи. Можна починати весілля 🤵🏻👰🏻‍♀️."
+  },
+  "marriage_confirm": {
+    "not_allowed": "🚫{name}, підтвердити шлюб можуть лише наречений, наречена або реєстратор.",
+    "need_signs": "⚠️ {name}, потрібні підписи і нареченого, так і нареченої.",
+    "final_congrats": "{husband} і {wife} одружилися!\nВітаємо! Нехай ваше майбутнє буде таким же надійним, як алгоритм без збоїв ✨."
+  },
+  "divorce": {
+    "need_reply_spouse": "{user}, кохання — це союз двох сердець. Команда \"!развод\" має бути відповіддю на повідомлення вашого(ї) супруга(ги) ❤️",
+    "no_self": "{user}, не можна розлучитися із самим(ою) собою! Спробуйте ще раз — із чоловіком/дружиною 💔",
+    "not_in_marriage": "{user}, ви вільні, наче вітер! Шлюбу немає — розлучення не потрібне. 💫",
+    "not_with_this_person": "{user}, ви не перебуваєте в шлюбі з цією людиною. ❌",
+    "confirm_prompt": "<b>{spouse}</b>, ви згодні розлучитися з <b>{user}</b>? 💔\n\nЯкщо так, натисніть кнопку нижче, щоб продовжити. ⚖️",
+    "yes_forbidden": "🚫 Ви не можете підтвердити розлучення.",
+    "no_forbidden": "🚫 Ви не можете скасувати розлучення.",
+    "divorced": "{user} і {spouse} розлучилися, проживши разом {duration} 💔",
+    "refused": "{user} відмовив(лась) розлучатися з {spouse} ❤️‍🩹"
+  },
+  "chat_lang_title": "🌐 Оберіть мову для цього чату:",
+  "chat_lang_saved": "✅ Мову чату оновлено.",
+  "chat_lang_toast": "Збережено",
+  "btn_back": "◀️ Назад",
+  "btn_chat_languages": "🌐 Мови",
+  "stops": {
+    "header": "⛔️ Замучені:",
+    "empty": "    ❌ Нікого немає"
+  },
+  "weekdays": {
+    "mon": "Понеділок",
+    "tue": "Вівторок",
+    "wed": "Середа",
+    "thu": "Четвер",
+    "fri": "Пʼятниця",
+    "sat": "Субота",
+    "sun": "Неділя"
+  },
+  "banana": {
+    "time_left": "{hours} год. {minutes} хв. {seconds} с",
+    "cooldown": "{title} <a href=\"tg://user?id={user_id}\">{user_name}</a>\nВаш банан: <b>{current_banana_size} см 🍌</b>\nЗбільшити можна буде 📏\nЧерез: <b>{time_str}</b> {emoji}⏳\n\n🔝 Щоб дізнатися своє місце в рейтингу, надішліть: <code>Топ банан</code>",
+    "grow_caption": "🍌 <b>Банан користувача {title} <a href=\"tg://user?id={user_id}\">{user_name}</a> виріс на {cm} см.</b>\nТепер банан {title} <a href=\"tg://user?id={user_id}\">{user_name}</a> становить <b>{new_size} см</b>. 📏\n"
+  },
+  "catalog": {
+    "new_gif_title": "<b>🥳 У каталог додано новий GIF!</b>",
+    "command_line": "🎭 <b>Команда:</b>\\n<code>+рп {cmd} {gif_id}</code>",
+    "gif_id_line": "🖼️ <b>GIF ID:</b> <code>{gif_id}</code>",
+    "hint_line": "💬 <b>Щоб додати команду, натисніть на текст, вставте у свій чат і надішліть</b>"
+  },
+  "buttons": {
+    "languages": "🌐 Мови"
+  },
+  "offers": {
+    "no_offers": "❌ Немає доступних пропозицій.",
+    "available_offers": "📦 Доступні пропозиції:\n{text}",
+    "offer_not_found": "❌ Помилка: пропозицію не знайдено.",
+    "purchase_not_allowed": "🚫 Ви не можете здійснювати покупки.",
+    "insufficient_funds": "❌ У вас недостатньо астронів для цієї покупки.",
+    "purchase_success_payment": "✅ Платіж пройшов успішно!\nНа ваш баланс зараховано {starcoins} астронів 🎉",
+    "owner_only": "🚫 Тільки власник може додавати пропозиції.",
+    "enter_price_stars": "Введіть ціну пропозиції в <b>Stars</b> ⭐️ (число):",
+    "enter_price_starcoins": "Введіть ціну пропозиції в <b>астронах</b> 🪐 (число):",
+    "enter_number": "❌ Введіть число!",
+    "enter_starcoins": "Скільки <b>астронів</b> 🪐 буде в пропозиції? (число)",
+    "enter_coins": "Скільки <b>монет</b> 🪙 буде в пропозиції? (число)",
+    "enter_discount": "Введіть знижку <b>%</b> (0 якщо без знижки):",
+    "offer_created_starcoins": "✅ Нову пропозицію створено!\nID: {_id}\nЦіна: {price}\nАстрони: {starcoins}\nЗнижка: {discount}%",
+    "offer_created_coins": "✅ Нову пропозицію створено!\nID: {_id}\nЦіна (в астронах): {price}\nМонет: {coins}\nЗнижка: {discount}%",
+    "offer_create_error": "❌ Помилка при створенні пропозиції.",
+    "no_rights_delete": "🚫 У вас немає прав для видалення пропозицій.",
+    "offer_deleted": "✅ Пропозицію успішно видалено.",
+    "invoice_title": "✨ Купівля астронів ✨",
+    "invoice_description": "Ви отримуєте {starcoins} астронів 🪐",
+    "invoice_label": "астрони ({starcoins})"
+  },
+  "donate": {
+    "desc_donate": "<b><i>💫 Придбай астронів та відкривай нові можливості! 💫</i></b>\n\nАстрони — внутрішня валюта бота. Використовуй їх для покупки VIP, кастомізації профілю та інших функцій 🚀"
+  },
+
+  "👤 Профиль": "👤 Профіль",
+  "⚙️ Настройки": "⚙️ Налаштування",
+  "💰 Баланс: {balance}": "💰 Баланс: {balance}"
+}

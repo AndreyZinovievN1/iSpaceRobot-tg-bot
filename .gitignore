@@ -1,0 +1,22 @@
+# --- Secrets ------------------------------------------------------------
+.env
+*.session
+*.session-journal
+*.pkl
+
+# --- Python -------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- Runtime artifacts --------------------------------------------------
+runtime_tmp/
+logs/
+gift_cache/
+business_deleted_media/
+app/ai_chat/generated_memes/
+*.tar.gz
